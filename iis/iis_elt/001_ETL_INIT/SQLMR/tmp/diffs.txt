@@ -1,0 +1,172 @@
+196c196
+< while (my $line=<STDIN>) {
+---
+>     while (my $line=<STDIN>) {
+199,210c199,213
+<     next if ($_ =~ $DiscardPattern{'main'});
+<     chop;
+<        #Because IISlogs come from Windows environment record delimiter is two bytes, so chop twice.
+<     chop;
+<     my @fields=split $Delimiter{'main'};
+<     next unless @fields == 12;
+< 
+<     $outfile = 'output';
+<     foreach $index (0..$#fields){
+< 	if ($BotSignatures[$index]){
+< 	    if ($fields[$index] =~ $BotSignatures[$index]){
+< 		$outfile = 'botfile';
+---
+> 	next if ($_ =~ $DiscardPattern{'main'});
+> 	chomp; #May 11th 2011
+> 	##chop; May 11th 2011
+> 	#Because IISlogs come from Windows environment record delimiter is two bytes, so chop twice.
+> 	##chop; May 11th 2011
+> 	
+> 	my @fields=split $Delimiter{'main'};
+> 	next unless @fields == 12;
+> 	
+> 	$outfile = 'output';
+> 	foreach $index (0..$#fields){
+> 	    if ($BotSignatures[$index]){
+> 		if ($fields[$index] =~ $BotSignatures[$index]){
+> 		    $outfile = 'botfile';
+> 		};
+212,217c215,234
+< 	};
+< 
+< 	if ($DiscardTemplate[$index]){
+< 	    if ($fields[$index] =~ $DiscardTemplate[$index]){
+<                 goto skipdiscard;
+< 		$outfile = 'discardfile';
+---
+> 	    
+> 	    if ($DiscardTemplate[$index]){
+> 		if ($fields[$index] =~ $DiscardTemplate[$index]){
+> 		    goto skipdiscard;
+> 		    $outfile = 'discardfile';
+> 		};
+> 	    };
+> 	    
+> 	    $Value{'main',$FieldName[$index]} = $fields[$index];
+> 	    if ($MaxLength{$FieldName[$index]}){
+> 		$Value{'main',$FieldName[$index]} = substr($fields[$index],0,$MaxLength{$FieldName[$index]})
+> 	    };
+> 	    if ($TruncatePattern{$FieldName[$index]}){
+> 		@TruncatedField = split($TruncatePattern{$FieldName[$index]},$fields[$index]);
+> 		$Value{'main',$FieldName[$index]} = $TruncatedField[0];
+> 	    };
+> 	    
+> 	    #$debug && print $FieldName[$index]," ", $fields[$index],"\n";
+> 	    if ($FieldType{$FieldName[$index]} eq 'record'){
+> 		SubRecord lc $FieldName[$index],$fields[$index];
+220,239c237,241
+< 
+< 	$Value{'main',$FieldName[$index]} = $fields[$index];
+< 	if ($MaxLength{$FieldName[$index]}){
+< 	    $Value{'main',$FieldName[$index]} = substr($fields[$index],0,$MaxLength{$FieldName[$index]})
+< 	    };
+< 	if ($TruncatePattern{$FieldName[$index]}){
+< 	    @TruncatedField = split($TruncatePattern{$FieldName[$index]},$fields[$index]);
+< 	    $Value{'main',$FieldName[$index]} = $TruncatedField[0];
+< 	};
+< 
+< 	#$debug && print $FieldName[$index]," ", $fields[$index],"\n";
+< 	if ($FieldType{$FieldName[$index]} eq 'record'){
+< 	    SubRecord lc $FieldName[$index],$fields[$index];
+< 	};
+<     };
+<     
+<     ### Handle the name of the logfile being processed as a special case.
+<     $Value{'main','logfilename'} = $filename;
+< 
+<     ### Output the fields as specified in output.csv
+---
+> 	
+> 	### Handle the name of the logfile being processed as a special case.
+> 	$Value{'main','logfilename'} = $filename;
+> 	
+> 	### Output the fields as specified in output.csv
+241,250c243,252
+<     ### Assemble output record
+<     foreach $index (1..$#OutFields){
+< 	my $BestCandidate="";
+< 	my $CandidateField;
+< 	@Candidates = $OutFields[$index] ? split (';', $OutFields[$index]) : ();
+<         #$debug && print "Candidates: ",join('|',@Candidates),"\n";
+< 	while ($CandidateField = shift (@Candidates)){
+< 	    if (index($CandidateField, '+') > -1){$BestCandidate = ConcatFields($CandidateField)}
+< 	    else {@KeyFields = split ('\.',$CandidateField);
+< 		  if (defined $Value{$KeyFields[0],$KeyFields[1]}){$BestCandidate = $Value{$KeyFields[0],$KeyFields[1]};
+---
+> 	### Assemble output record
+> 	foreach $index (1..$#OutFields){
+> 	    my $BestCandidate="";
+> 	    my $CandidateField;
+> 	    @Candidates = $OutFields[$index] ? split (';', $OutFields[$index]) : ();
+> 	    #$debug && print "Candidates: ",join('|',@Candidates),"\n";
+> 	    while ($CandidateField = shift (@Candidates)){
+> 		if (index($CandidateField, '+') > -1){$BestCandidate = ConcatFields($CandidateField)}
+> 		else {@KeyFields = split ('\.',$CandidateField);
+> 		      if (defined $Value{$KeyFields[0],$KeyFields[1]}){$BestCandidate = $Value{$KeyFields[0],$KeyFields[1]};
+252,270c254,275
+< 								   };
+< 	      };
+< 	};
+< 	no warnings "numeric";
+<         #$debug && print "BestCandidate = $BestCandidate\n";
+<         #$debug && print "Index = $index, MaxLength[$index] = ",$MaxLength[$index],"\n";
+< 	if ($MaxLength[$index]){
+< 	    $BestCandidate = substr($BestCandidate,0,$MaxLength[$index]);
+< 	};
+<         #$debug && print "BestCandidate = $BestCandidate\n";
+<         #$debug && print "Index = $index, TruncOutPattern[$index] = ",$TruncOutPattern[$index],"\n";
+< 	if ($TruncOutPattern[$index]){
+< 	    @TruncatedOutField = split ($TruncOutPattern[$index], $BestCandidate);
+<             my $val = shift(@TruncatedOutField);
+<             if (defined $val){
+<                 $BestCandidate = $val;
+<             }else{
+< 	    	$BestCandidate =  "";
+<             }
+---
+> 		      };
+> 		};
+> 	    };
+> 	    no warnings "numeric";
+> 	    #$debug && print "BestCandidate = $BestCandidate\n";
+> 	    #$debug && print "Index = $index, MaxLength[$index] = ",$MaxLength[$index],"\n";
+> 	    if ($MaxLength[$index]){
+> 		$BestCandidate = substr($BestCandidate,0,$MaxLength[$index]);
+> 	    };
+> 	    #$debug && print "BestCandidate = $BestCandidate\n";
+> 	    #$debug && print "Index = $index, TruncOutPattern[$index] = ",$TruncOutPattern[$index],"\n";
+> 	    if ($TruncOutPattern[$index]){
+> 		@TruncatedOutField = split ($TruncOutPattern[$index], $BestCandidate);
+> 		my $val = shift(@TruncatedOutField);
+> 		if (defined $val){
+> 		    $BestCandidate = $val;
+> 		}else{
+> 		    $BestCandidate =  "";
+> 		}
+> 	    };
+> 	    #$debug && print "BestCandidate = $BestCandidate\n\n";
+> 	    push @OutputRecord, $BestCandidate;
+272,277c277,279
+<         #$debug && print "BestCandidate = $BestCandidate\n\n";
+< 		push @OutputRecord, $BestCandidate;
+<    };
+< 
+<     ### print output record
+<     ### don't output record if first field (userid) is null
+---
+> 	
+> 	### print output record
+> 	### don't output record if first field (userid) is null
+280,282c282,284
+< skipdiscard:
+<     CleanVars;
+< }
+---
+>       skipdiscard:
+> 	CleanVars;
+>     }

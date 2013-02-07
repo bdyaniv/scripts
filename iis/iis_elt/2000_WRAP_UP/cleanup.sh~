@@ -1,0 +1,13 @@
+#!/bin/bash
+echo 
+echo "2000 - WRAP UP "
+echo
+act -d beehive -U etl -w etl << EOF
+\timing
+BEGIN;
+TRUNCATE TABLE iis.bn_session_stage_seq;
+TRUNCATE TABLE iis.resources_seq;
+END;
+EOF
+
+

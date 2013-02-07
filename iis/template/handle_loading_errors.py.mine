@@ -1,0 +1,180 @@
+import os
+import sys
+import subprocess
+import cStringIO
+import re
+import string
+
+
+#so basically i will for each file attempt the following:
+a_file="ex101002.log.pnjcpsrchres03.W3SVC3.post.txt"
+a_file=sys.argv[1]
+
+def run_loader():
+    loader_command = cStringIO.StringIO()
+    loader_command.write("ncluster_loader --loader 10.225.75.243 -f -D \"\" --columns uuid,line --el-discard-errors -U beehive -w b@@hive4nCluster --skip-rows 1 bna.iis_logs_raw tmp.new.txt")
+    p = subprocess.Popen(loader_command.getvalue(), shell=True, stdout = subprocess.PIPE)
+    output = p.stdout
+    print "output class:", output.__class__
+    output_data = output.read().strip()
+    output.close()
+    print "output_data:\n", output_data, "\nend of output data\n"
+    return output_data
+
+#look for success:
+# 47648 tuples were successfully loaded into table
+
+def check_for_byte_sequence(in_data):
+    if re.search("(?m)^ERROR:  invalid byte sequence for encoding",in_data):
+        return True
+    else:
+        return False
+
+def check_for_marker_corrupt(in_data):
+    if re.search("(?m)^ERROR:  end-of-copy marker corrupt",in_data):
+        return True
+    else:
+        return False
+
+def check_for_extra_data(in_data):
+    if re.search("(?m)^ERROR:  extra data after last expected column", in_data):
+        return True
+    else:
+        return False
+
+def get_bad_line(in_data):
+    bad_line=0
+    output_lines = string.split(in_data, "\n")
+    for an_output_line in output_lines:
+            if re.search("^line ", an_output_line):
+                line_split=string.split(an_output_line, " ")
+                print line_split
+                bad_line=line_split[1].strip(" ")
+                print "bad line: ", bad_line
+    return bad_line
+
+def cut_out_line(line_num):
+    print "Working to remove line:", line_num
+    regen_file_command = cStringIO.StringIO()
+    regen_file_command.write("./regen_file.sh ")
+    regen_file_command.write(line_num)
+    print "regen_file_command: ", regen_file_command.getvalue()
+    subprocess.call(regen_file_command.getvalue(), shell=True)
+
+    #call regen_file.sh on the line_num
+
+def move_back_original_name():
+    mv_command = cStringIO.StringIO()
+    mv_command.write("mv tmp.new.txt ")
+    mv_command.write(a_file)
+    print "mv_command: ", mv_command.getvalue()
+    subprocess.call(mv_command.getvalue(), shell=True)
+
+def get_bad_byte_sequence(in_data):
+    bad_sequence=0
+    output_lines = string.split(in_data, "\n")
+    #print output_lines
+    for an_output_line in output_lines:
+            if re.search("^ERROR:  invalid byte sequence for encoding", an_output_line):
+                    print "Found invalid byte sequence...grabbing last of line"
+                    error_split = string.split(an_output_line, ":")
+                    print "Error split:", error_split
+                    bad_sequence = error_split[2].lstrip(" ")
+    return bad_sequence
+
+#sed s/.\xaf//g ex101001.log.PNYCOMMWEB03.W3SVC2.post.txt > tmp.new.txt
+def correct_byte_sequence(in_data):
+    bad_sequence=0
+    output_lines = string.split(in_data, "\n")
+    #print output_lines
+    for an_output_line in output_lines:
+            if re.search("^ERROR:  invalid byte sequence for encoding", an_output_line):
+                    print "Found invalid byte sequence...grabbing last of line"
+                    error_split = string.split(an_output_line, ":")
+                    print "Error split:", error_split
+                    bad_sequence = error_split[2].lstrip(" ")
+                    print "bad sequence:", bad_sequence
+                    sed_command = cStringIO.StringIO()
+                    sed_command.write("sed s/.\\x")
+                    #I just want the last two chars of the bad sequence
+                    sed_command.write(string.split(bad_sequence, "x")[1])
+                    sed_command.write("//g tmp.new.txt > tmp.new.new.txt")
+                    sed_command.write(";mv tmp.new.new.txt tmp.new.txt")
+                    print "sed command: ", sed_command.getvalue()
+                    subprocess.call(sed_command.getvalue(), shell=True)
+    return bad_sequence
+
+#store the original file name away...then move the file
+original_file_name = a_file
+print "Working on file:", original_file_name
+move_command = cStringIO.StringIO()
+move_command.write("mv ")
+move_command.write(a_file)
+move_command.write(" tmp.new.txt")
+subprocess.call(move_command.getvalue(), shell=True)
+
+#run the loader command on the file
+the_data = run_loader()
+if check_for_byte_sequence(the_data):
+    sequence = get_bad_byte_sequence(the_data)
+    print "Sequence:", sequence
+    if sequence == "0x83":
+        print "0x83: i would want to move it back"
+        move_back_original_name()
+    elif sequence == "0x82":
+        print "0x82: i would want to move it back"
+        move_back_original_name()
+    else:
+        sequence = correct_byte_sequence(the_data)
+        the_data = run_loader()
+        print the_data
+if check_for_marker_corrupt(the_data):
+    move_back_original_name()
+if check_for_extra_data(the_data):
+    bad_line = get_bad_line(the_data)
+    cut_out_line(bad_line)
+    the_data = run_loader()
+    print the_data
+big_comment = """
+
+loader_command = cStringIO.StringIO()
+loader_command.write("ncluster_loader --loader 10.225.75.243 -f -D \"\" --columns uuid,line --el-discard-errors -U beehive -w b@@hive4nCluster --skip-rows 1 bna.iis_logs_raw tmp.new.txt")
+p = subprocess.Popen(loader_command.getvalue(), shell=True, stdout = subprocess.PIPE)
+output = p.stdout
+print "output class:", output.__class__
+output_data = output.read().strip()
+output.close()
+print "output_data:\n", output_data, "\nend of output data\n"
+#look at the output...then perform various coping mechanisms depending on error
+
+
+
+if re.search("(?m)^ERROR:  invalid byte sequence for encoding",output_data): 
+    print "Found invalid byte sequence"
+if re.search("(?m)^ERROR:", output_data): 
+    print "Found ERROR"
+    match = re.search("(?m)^ERROR:", output_data)
+    print "group(0):", match.group(0)
+    matchline = re.search("(?m)^ERROR:*$", output_data)
+    print "more?:", match.groups()
+
+#poor man:
+output_lines = string.split(output_data, "\n")
+print output_lines
+for an_output_line in output_lines:
+        if re.search("^ERROR:  invalid byte sequence for encoding", an_output_line):
+                print "Found invalid byte sequence...grabbing last of line"
+                error_split = string.split(an_output_line, ":")
+                print "Error split:", error_split
+                bad_sequence = error_split[2].lstrip(" ")
+                print "bad sequence:", bad_sequence
+                sed_command = cStringIO.StringIO()
+
+
+#ERROR:  invalid input syntax on partition key for type character varying
+#following by "line 223008" (on beginning of line)
+#Run
+#./regen_file.sh <lineno>
+#then rerun ncluster loader
+
+"""

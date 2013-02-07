@@ -1,0 +1,54 @@
+#!/bin/bash
+
+#go into the directory
+# for each file
+cd $1
+for file in `ls *.gz`
+do
+    gzip -d ${file}
+    length=`echo $file | wc -c`
+    let new_length=${length}-4
+    newfile_name=`echo $file | cut -c1-${new_length}`
+    echo $newfile_name
+    
+    python gen_uuid_file.py ${newfile_name}
+#changed this to include a -f
+    recode -f us..UTF8 ${newfile_name}.post.txt
+#do i want to through this through SED as well?  do we think that'll take care of any of the bad chars?  It didn't (nor did tr) appear to work for 0x83
+#other things tried:
+#cat ex101002.log.pnjcpsrchres01.W3SVC3.post.txt | tr -d '\203' > ex101002.log.pnjcpsrchres01.W3SVC3.postprocess.txt
+#sed s/.\x83//g ex101002.log.pnjcpsrchres01.W3SVC3.post.txt > ex101002.log.pnjcpsrchres01.W3SVC3.postprocess.txt
+    gzip -9 ${newfile_name}
+    
+    
+    #Should i run all the sed / preliminary bits prior?
+    #Should I alternate these to make things run in parallel?
+    #also...i should change this to be better about error retention, etc.
+<<<<<<< .mine
+    ncluster_loader --loader 10.225.75.243 -f -D "" --columns uuid,hit_timestamp,line --el-discard-errors -U beehive -w b@@hive4nCluster --skip-rows 1 bna.iis_logs_raw ${newfile_name}.post.txt
+=======
+    ncluster_loader --loader 10.225.75.243 -f -D "" --columns uuid,hit_timestamp,line --el-discard-errors -U etl -w etl --skip-rows 1 bna.iis_logs_raw ${newfile_name}.post.txt
+>>>>>>> .r1090
+    
+done
+
+#At the end, i'll wanna check the logs to see what failed and move it off...then test it
+#or..put this into a driver file...
+
+
+
+#is there a simple mod / randomized way i can use one of the 3 loaders
+# or multiproc / multithread this to increase throughput.
+
+#gzip -d it
+
+#python gen_uuid_file.py on it
+
+#recode JAVA..UTF8 filename
+
+#ctrl v ctrl o
+#ncluster_loader --loader 10.225.75.243 -f -D "\x0F" --columns uuid,line --el-discard-errors -U beehive -w beehive --skip-rows 1 bna.iis_logs_raw  filename.post.txt
+
+#gzip original back up
+
+#erase work file?

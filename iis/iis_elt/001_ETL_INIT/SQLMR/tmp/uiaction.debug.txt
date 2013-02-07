@@ -1,0 +1,715 @@
+date 2011-01-29
+time 17:05:10
+c-ip 69.113.239.204
+cs-method GET
+cs-uri-stem /op/request.aspx
+cs-uri-query stage=signIn&ATL_lid=iD4TE2fNfU&ATL_userid=iD4=TE2fNfU&ATL_sid=iD4TE2fNgU&ATL_seqnum=15&ATL_lid=iD4TE2fNfU&ATL_userid=iD4TE2fNfU&ATL_sid=iD4TE2fNgU&ATL_seqnum=15&ATL_stageid=signin&ATL_orderpath=C_CONS_cart&ATL_cartqty=1&ATL_carttotal=9.85
+AttributeValue
+stage signInField: stage
+Value: signIn
+Subrecord: cs-uri-query
+ATL_lid iD4TE2fNfUField: ATL_lid
+Value: iD4TE2fNfU
+Subrecord: cs-uri-query
+ATL_userid iD4=TE2fNfUField: ATL_userid
+Value: iD4=TE2fNfU
+Subrecord: cs-uri-query
+ATL_sid iD4TE2fNgUField: ATL_sid
+Value: iD4TE2fNgU
+Subrecord: cs-uri-query
+ATL_seqnum 15Field: ATL_seqnum
+Value: 15
+Subrecord: cs-uri-query
+ATL_lid iD4TE2fNfUField: ATL_lid
+Value: iD4TE2fNfU
+Subrecord: cs-uri-query
+ATL_userid iD4TE2fNfUField: ATL_userid
+Value: iD4TE2fNfU
+Subrecord: cs-uri-query
+ATL_sid iD4TE2fNgUField: ATL_sid
+Value: iD4TE2fNgU
+Subrecord: cs-uri-query
+ATL_seqnum 15Field: ATL_seqnum
+Value: 15
+Subrecord: cs-uri-query
+ATL_stageid signinField: ATL_stageid
+Value: signin
+Subrecord: cs-uri-query
+ATL_orderpath C_CONS_cartField: ATL_orderpath
+Value: C_CONS_cart
+Subrecord: cs-uri-query
+ATL_cartqty 1Field: ATL_cartqty
+Value: 1
+Subrecord: cs-uri-query
+ATL_carttotal 9.85Field: ATL_carttotal
+Value: 9.85
+Subrecord: cs-uri-query
+sc-status 200
+sc-bytes 21149
+csuser-agent Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+6.1;+WOW64;+Trident/4.0;+GTB6.6;+SLCC2;+.NET+CLR+2.0.50727;+.NET+CLR+3.5.30729;+.NET+CLR+3.0.30729;+Media+Center+PC+6.0;+MDDC;+.NET4.0C;+BRI/1)
+cscookie pds%5Fvcart%5Fsess=d=YxiN%2bBYArTXhYEhsu6Nw01nX%2bCwETqIM9TpcABAAEAACAAAAAwAGAGkACAB3AAoABAA5Ljg1AQAOAAQAOS44NQ%3d%3d&v=5;+pds%5Fsess=d=AQC%2bhdmqRA3IKTEc0ziOPYNJAQqAqXvqWgiVE1uY1vPuCG88PeT2et%2fakONpTjbURPsc9U1ybvqjWEUOP%2fMES5%2bafp3Pn%2fbQQ39xwIV%2bEu39rqd%2b%2fTrXQ26lLjNQuPG7Vi%2ffPBLMsY8jm1FsicoGeQ0cIKpKCdJgl39j%2fBf8btwD1CbUYYGp1HM87MUWq1Y7hqA8avZyVlkNvXvS3bREwFP2&v=5;+datacenter=nj;+__utmc=1;+90231135_clogin=l=1296324172&v=1&e=1296326116873;+xx4tyNo=3l4jE2fNa8;+vcprodid=9781601370938=9781601370938;+vcprodid_rt=9781601370938=-1;+bnMobileCMS=cjsval=1835708435&cjvf=7;+recentlocs=d=yE3aah0AT6ZtYNPoWhFe8kNER3EPZRhPt%2buWYBV8yfU6XAAoAFEANwAAADgAAgA5AAQAOgAGADsACAA8AAoAPQAMAD4ADgA%2fABAAQAA%2bAAAAAAAAAAAAAAAAAAAAAAAsAEJvb2tzLCBUZXh0Ym9va3MsIGVCb29rcywgVG95cywgR2FtZXMgJiBNb3JlEQBXZWJIb3N0L2luZGV4LmFzcA%3d%3d&v=5;+browserid=version=8%2E0&os=3&browser=2;+returning=1;+cartexists=yes;+userid=iD4TE2fNfU;+pds%5Flife=d=AQBvG9K50Q2esO8Wg%2fKbeTGr%2f4kpAXUThXH1Id%2fkTD2bU5xuo5uLBgKGDEz7tkYV3Nb0AjQ%2fQm32weXEqtIKtakUFQvsjUv0q0PD7XZraaa3pduFfsMmauVElJEnoMuk8ZlTaDLKMpzI5azFs%2ftlR1Ru&v=5;+__utma=1.1367171768.1296324172.1296324172.1296324172.1;+__utmb=1.1.10.1296324172;+__utmz=1.1296324172.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none);+CoreID6=48873893767212963241725&ci=90231135;+csxslt=no;+pds%5Fmerccart=d=AQDhu7YC%2bL7tsBBMmdq8ixJOfpLagfWY9iroIBtzC%2foXEgZkVY%2bh1S66kPbNKRdPfds%3d&v=5;+bnMobileCMV=16837765310168377653101;+CMAVID=none;+cmTPSet=Y;+cmRS=&t1=1296324285262&t2=1296324294669&t3=1296324316774&lti=1296324301658&ln=&hr=http%3A//cart2.barnesandnoble.com/shop/promodetails.asp%3Fx%3D%26promoid%3D9149&fti=1296324316774&fn=UNDEFINED%3A0%3Bform1%3A1%3B&ac=1:S&fd=&uer=&fu=Request.aspx%3Fx%3D&pi=cart%3AitemAdded&ho=data.coremetrics.com/cm%3F&ci=90231135&ul=http%3A//cart4.barnesandnoble.com/op/request.aspx%3Fpath_state%3D1%26stage%3DitemAdded%26UIAction%3DaddToCart%26opt%3Dconsumer%26EAN%3D9781601370938%26productCode%3DBK%26AddToCart.x%3D17%26AddToCart.y%3D11&rf=http%3A//search.barnesandnoble.com/books/product.aspx%3FEAN%3D9781601370938%26page%3Dindex%26prod%3Duniv%26choice%3Dallproducts%26query%3D978-1-60137-093-8%26flag%3DFalse%26ugrp%3D1&cjen=1
+AttributeValue
+pds%5Fvcart%5Fsess d=YxiN%2bBYArTXhYEhsu6Nw01nX%2bCwETqIM9TpcABAAEAACAAAAAwAGAGkACAB3AAoABAA5Ljg1AQAOAAQAOS44NQ%3d%3dField: pds%5Fvcart%5Fsess
+Value: d=YxiN%2bBYArTXhYEhsu6Nw01nX%2bCwETqIM9TpcABAAEAACAAAAAwAGAGkACAB3AAoABAA5Ljg1AQAOAAQAOS44NQ%3d%3d
+Subrecord: cscookie
+v 5Field: v
+Value: 5
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+pds%5Fsess d=AQC%2bhdmqRA3IKTEc0ziOPYNJAQqAqXvqWgiVE1uY1vPuCG88PeT2et%2fakONpTjbURPsc9U1ybvqjWEUOP%2fMES5%2bafp3Pn%2fbQQ39xwIV%2bEu39rqd%2b%2fTrXQ26lLjNQuPG7Vi%2ffPBLMsY8jm1FsicoGeQ0cIKpKCdJgl39j%2fBf8btwD1CbUYYGp1HM87MUWq1Y7hqA8avZyVlkNvXvS3bREwFP2Field: pds%5Fsess
+Value: d=AQC%2bhdmqRA3IKTEc0ziOPYNJAQqAqXvqWgiVE1uY1vPuCG88PeT2et%2fakONpTjbURPsc9U1ybvqjWEUOP%2fMES5%2bafp3Pn%2fbQQ39xwIV%2bEu39rqd%2b%2fTrXQ26lLjNQuPG7Vi%2ffPBLMsY8jm1FsicoGeQ0cIKpKCdJgl39j%2fBf8btwD1CbUYYGp1HM87MUWq1Y7hqA8avZyVlkNvXvS3bREwFP2
+Subrecord: cscookie
+v 5Field: v
+Value: 5
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+datacenter njField: datacenter
+Value: nj
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+__utmc 1Field: __utmc
+Value: 1
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+90231135_clogin l=1296324172Field: 90231135_clogin
+Value: l=1296324172
+Subrecord: cscookie
+v 1Field: v
+Value: 1
+Subrecord: cscookie
+e 1296326116873Field: e
+Value: 1296326116873
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+xx4tyNo 3l4jE2fNa8Field: xx4tyNo
+Value: 3l4jE2fNa8
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+vcprodid 9781601370938=9781601370938Field: vcprodid
+Value: 9781601370938=9781601370938
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+vcprodid_rt 9781601370938=-1Field: vcprodid_rt
+Value: 9781601370938=-1
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+bnMobileCMS cjsval=1835708435Field: bnMobileCMS
+Value: cjsval=1835708435
+Subrecord: cscookie
+cjvf 7Field: cjvf
+Value: 7
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+recentlocs d=yE3aah0AT6ZtYNPoWhFe8kNER3EPZRhPt%2buWYBV8yfU6XAAoAFEANwAAADgAAgA5AAQAOgAGADsACAA8AAoAPQAMAD4ADgA%2fABAAQAA%2bAAAAAAAAAAAAAAAAAAAAAAAsAEJvb2tzLCBUZXh0Ym9va3MsIGVCb29rcywgVG95cywgR2FtZXMgJiBNb3JlEQBXZWJIb3N0L2luZGV4LmFzcA%3d%3dField: recentlocs
+Value: d=yE3aah0AT6ZtYNPoWhFe8kNER3EPZRhPt%2buWYBV8yfU6XAAoAFEANwAAADgAAgA5AAQAOgAGADsACAA8AAoAPQAMAD4ADgA%2fABAAQAA%2bAAAAAAAAAAAAAAAAAAAAAAAsAEJvb2tzLCBUZXh0Ym9va3MsIGVCb29rcywgVG95cywgR2FtZXMgJiBNb3JlEQBXZWJIb3N0L2luZGV4LmFzcA%3d%3d
+Subrecord: cscookie
+v 5Field: v
+Value: 5
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+browserid version=8%2E0Field: browserid
+Value: version=8%2E0
+Subrecord: cscookie
+os 3Field: os
+Value: 3
+Subrecord: cscookie
+browser 2Field: browser
+Value: 2
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+returning 1Field: returning
+Value: 1
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+cartexists yesField: cartexists
+Value: yes
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+userid iD4TE2fNfUField: userid
+Value: iD4TE2fNfU
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+pds%5Flife d=AQBvG9K50Q2esO8Wg%2fKbeTGr%2f4kpAXUThXH1Id%2fkTD2bU5xuo5uLBgKGDEz7tkYV3Nb0AjQ%2fQm32weXEqtIKtakUFQvsjUv0q0PD7XZraaa3pduFfsMmauVElJEnoMuk8ZlTaDLKMpzI5azFs%2ftlR1RuField: pds%5Flife
+Value: d=AQBvG9K50Q2esO8Wg%2fKbeTGr%2f4kpAXUThXH1Id%2fkTD2bU5xuo5uLBgKGDEz7tkYV3Nb0AjQ%2fQm32weXEqtIKtakUFQvsjUv0q0PD7XZraaa3pduFfsMmauVElJEnoMuk8ZlTaDLKMpzI5azFs%2ftlR1Ru
+Subrecord: cscookie
+v 5Field: v
+Value: 5
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+__utma 1.1367171768.1296324172.1296324172.1296324172.1Field: __utma
+Value: 1.1367171768.1296324172.1296324172.1296324172.1
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+__utmb 1.1.10.1296324172Field: __utmb
+Value: 1.1.10.1296324172
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+__utmz 1.1296324172.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)Field: __utmz
+Value: 1.1296324172.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+CoreID6 48873893767212963241725Field: CoreID6
+Value: 48873893767212963241725
+Subrecord: cscookie
+ci 90231135Field: ci
+Value: 90231135
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+csxslt noField: csxslt
+Value: no
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+pds%5Fmerccart d=AQDhu7YC%2bL7tsBBMmdq8ixJOfpLagfWY9iroIBtzC%2foXEgZkVY%2bh1S66kPbNKRdPfds%3dField: pds%5Fmerccart
+Value: d=AQDhu7YC%2bL7tsBBMmdq8ixJOfpLagfWY9iroIBtzC%2foXEgZkVY%2bh1S66kPbNKRdPfds%3d
+Subrecord: cscookie
+v 5Field: v
+Value: 5
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+bnMobileCMV 16837765310168377653101Field: bnMobileCMV
+Value: 16837765310168377653101
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+CMAVID noneField: CMAVID
+Value: none
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+cmTPSet YField: cmTPSet
+Value: Y
+Subrecord: cscookie
+ Field: 
+Value: 
+Subrecord: cscookie
+cmRS Field: cmRS
+Value: 
+Subrecord: cscookie
+t1 1296324285262Field: t1
+Value: 1296324285262
+Subrecord: cscookie
+t2 1296324294669Field: t2
+Value: 1296324294669
+Subrecord: cscookie
+t3 1296324316774Field: t3
+Value: 1296324316774
+Subrecord: cscookie
+lti 1296324301658Field: lti
+Value: 1296324301658
+Subrecord: cscookie
+ln Field: ln
+Value: 
+Subrecord: cscookie
+hr http%3A//cart2.barnesandnoble.com/shop/promodetails.asp%3Fx%3D%26promoid%3D9149Field: hr
+Value: http%3A//cart2.barnesandnoble.com/shop/promodetails.asp%3Fx%3D%26promoid%3D9149
+Subrecord: cscookie
+fti 1296324316774Field: fti
+Value: 1296324316774
+Subrecord: cscookie
+fn UNDEFINED%3A0%3Bform1%3A1%3BField: fn
+Value: UNDEFINED%3A0%3Bform1%3A1%3B
+Subrecord: cscookie
+ac 1:SField: ac
+Value: 1:S
+Subrecord: cscookie
+fd Field: fd
+Value: 
+Subrecord: cscookie
+uer Field: uer
+Value: 
+Subrecord: cscookie
+fu Request.aspx%3Fx%3DField: fu
+Value: Request.aspx%3Fx%3D
+Subrecord: cscookie
+pi cart%3AitemAddedField: pi
+Value: cart%3AitemAdded
+Subrecord: cscookie
+ho data.coremetrics.com/cm%3FField: ho
+Value: data.coremetrics.com/cm%3F
+Subrecord: cscookie
+ci 90231135Field: ci
+Value: 90231135
+Subrecord: cscookie
+ul http%3A//cart4.barnesandnoble.com/op/request.aspx%3Fpath_state%3D1%26stage%3DitemAdded%26UIAction%3DaddToCart%26opt%3Dconsumer%26EAN%3D9781601370938%26productCode%3DBK%26AddToCart.x%3D17%26AddToCart.y%3D11Field: ul
+Value: http%3A//cart4.barnesandnoble.com/op/request.aspx%3Fpath_state%3D1%26stage%3DitemAdded%26UIAction%3DaddToCart%26opt%3Dconsumer%26EAN%3D9781601370938%26productCode%3DBK%26AddToCart.x%3D17%26AddToCart.y%3D11
+Subrecord: cscookie
+rf http%3A//search.barnesandnoble.com/books/product.aspx%3FEAN%3D9781601370938%26page%3Dindex%26prod%3Duniv%26choice%3Dallproducts%26query%3D978-1-60137-093-8%26flag%3DFalse%26ugrp%3D1Field: rf
+Value: http%3A//search.barnesandnoble.com/books/product.aspx%3FEAN%3D9781601370938%26page%3Dindex%26prod%3Duniv%26choice%3Dallproducts%26query%3D978-1-60137-093-8%26flag%3DFalse%26ugrp%3D1
+Subrecord: cscookie
+cjen 1Field: cjen
+Value: 1
+Subrecord: cscookie
+csreferer http://cart4.barnesandnoble.com/op/request.aspx?path_state=1&stage=itemAdded&UIAction=addToCart&opt=consumer&EAN=9781601370938&productCode=BK&AddToCart.x=17&AddToCart.y=11
+cs-host cart4.barnesandnoble.co
+Candidates: cscookie.userid|cs-uri-query.userid|cs-uri-query.atl_userid
+BestCandidate = iD4TE2fNfU
+Index = 1, MaxLength[1] = 
+BestCandidate = iD4TE2fNfU
+Index = 1, TruncOutPattern[1] = (?-xism:\W)
+BestCandidate = iD4TE2fNfU
+
+Candidates: main.c-ip
+BestCandidate = 69.113.239.204
+Index = 2, MaxLength[2] = 
+BestCandidate = 69.113.239.204
+Index = 2, TruncOutPattern[2] = 
+BestCandidate = 69.113.239.204
+
+Candidates: main.sc-status
+BestCandidate = 200
+Index = 3, MaxLength[3] = 
+BestCandidate = 200
+Index = 3, TruncOutPattern[3] = 
+BestCandidate = 200
+
+Candidates: main.date+main.time
+BestCandidate = 2011-01-29 17:05:10
+Index = 4, MaxLength[4] = 
+BestCandidate = 2011-01-29 17:05:10
+Index = 4, TruncOutPattern[4] = 
+BestCandidate = 2011-01-29 17:05:10
+
+Candidates: main.logfilename
+BestCandidate = temp.gz
+Index = 5, MaxLength[5] = 
+BestCandidate = temp.gz
+Index = 5, TruncOutPattern[5] = 
+BestCandidate = temp.gz
+
+Candidates: main.cs-host
+BestCandidate = cart4.barnesandnoble.co
+Index = 6, MaxLength[6] = 
+BestCandidate = cart4.barnesandnoble.co
+Index = 6, TruncOutPattern[6] = 
+BestCandidate = cart4.barnesandnoble.co
+
+Candidates: cs-uri-query.atl_vcmod|cs-uri-query.vcmod
+BestCandidate = 
+Index = 7, MaxLength[7] = 
+BestCandidate = 
+Index = 7, TruncOutPattern[7] = (?-xism:\D)
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_vcqty|cs-uri-query.vcqty
+BestCandidate = 
+Index = 8, MaxLength[8] = 
+BestCandidate = 
+Index = 8, TruncOutPattern[8] = (?-xism:\D)
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_pwb|cs-uri-query.pwb
+BestCandidate = 
+Index = 9, MaxLength[9] = 
+BestCandidate = 
+Index = 9, TruncOutPattern[9] = (?-xism:\D)
+BestCandidate = 
+
+Candidates: cs-uri-query.endeca
+BestCandidate = 
+Index = 10, MaxLength[10] = 
+BestCandidate = 
+Index = 10, TruncOutPattern[10] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.vcprodid|cs-uri-query.atl_vcprodid
+BestCandidate = 
+Index = 11, MaxLength[11] = 
+BestCandidate = 
+Index = 11, TruncOutPattern[11] = (?-xism:\D)
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_hasorderum|cs-uri-query.oid
+BestCandidate = 
+Index = 12, MaxLength[12] = 
+BestCandidate = 
+Index = 12, TruncOutPattern[12] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_sourceid
+BestCandidate = 
+Index = 13, MaxLength[13] = 10
+BestCandidate = 
+Index = 13, TruncOutPattern[13] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.isbn|cs-uri-query.atl_isbn
+BestCandidate = 
+Index = 14, MaxLength[14] = 15
+BestCandidate = 
+Index = 14, TruncOutPattern[14] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.ean|cs-uri-query.atl_ean
+BestCandidate = 
+Index = 15, MaxLength[15] = 15
+BestCandidate = 
+Index = 15, TruncOutPattern[15] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.pid|cs-uri-query.atl_pid
+BestCandidate = 
+Index = 16, MaxLength[16] = 
+BestCandidate = 
+Index = 16, TruncOutPattern[16] = (?-xism:\D)
+BestCandidate = 
+
+Candidates: cs-uri-query.cds2pid|cs-uri-query.atl_cds2pid
+BestCandidate = 
+Index = 17, MaxLength[17] = 15
+BestCandidate = 
+Index = 17, TruncOutPattern[17] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.itm|cs-uri-query.atl_itm
+BestCandidate = 
+Index = 18, MaxLength[18] = 
+BestCandidate = 
+Index = 18, TruncOutPattern[18] = (?-xism:\D)
+BestCandidate = 
+
+Candidates: main.csuser-agent
+BestCandidate = Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+6.1;+WOW64;+Trident/4.0;+GTB6.6;+SLCC2;+.NET+CLR+2.0.5
+Index = 19, MaxLength[19] = 
+BestCandidate = Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+6.1;+WOW64;+Trident/4.0;+GTB6.6;+SLCC2;+.NET+CLR+2.0.5
+Index = 19, TruncOutPattern[19] = 
+BestCandidate = Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+6.1;+WOW64;+Trident/4.0;+GTB6.6;+SLCC2;+.NET+CLR+2.0.5
+
+Candidates: main.cs-uri-stem
+BestCandidate = /op/request.aspx
+Index = 20, MaxLength[20] = 100
+BestCandidate = /op/request.aspx
+Index = 20, TruncOutPattern[20] = 
+BestCandidate = /op/request.aspx
+
+Candidates: cs-uri-query.atl_stageid
+BestCandidate = signin
+Index = 21, MaxLength[21] = 
+BestCandidate = signin
+Index = 21, TruncOutPattern[21] = 
+BestCandidate = signin
+
+Candidates: cs-uri-query.atl_seqnum
+BestCandidate = 15
+Index = 22, MaxLength[22] = 
+BestCandidate = 15
+Index = 22, TruncOutPattern[22] = (?-xism:\D)
+BestCandidate = 15
+
+Candidates: cs-uri-query.atl_membershipid
+BestCandidate = 
+Index = 23, MaxLength[23] = 
+BestCandidate = 
+Index = 23, TruncOutPattern[23] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.ourl
+BestCandidate = 
+Index = 24, MaxLength[24] = 100
+BestCandidate = 
+Index = 24, TruncOutPattern[24] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_sessdoll
+BestCandidate = 
+Index = 25, MaxLength[25] = 
+BestCandidate = 
+Index = 25, TruncOutPattern[25] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_orderpath
+BestCandidate = C_CONS_cart
+Index = 26, MaxLength[26] = 
+BestCandidate = C_CONS_cart
+Index = 26, TruncOutPattern[26] = 
+BestCandidate = C_CONS_cart
+
+Candidates: cs-uri-query.atl_giftmsg
+BestCandidate = 
+Index = 27, MaxLength[27] = 
+BestCandidate = 
+Index = 27, TruncOutPattern[27] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_giftwrap
+BestCandidate = 
+Index = 28, MaxLength[28] = 
+BestCandidate = 
+Index = 28, TruncOutPattern[28] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_button
+BestCandidate = 
+Index = 29, MaxLength[29] = 
+BestCandidate = 
+Index = 29, TruncOutPattern[29] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_coupon
+BestCandidate = 
+Index = 30, MaxLength[30] = 
+BestCandidate = 
+Index = 30, TruncOutPattern[30] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_giftcard
+BestCandidate = 
+Index = 31, MaxLength[31] = 
+BestCandidate = 
+Index = 31, TruncOutPattern[31] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_bypassshipmtd
+BestCandidate = 
+Index = 32, MaxLength[32] = 
+BestCandidate = 
+Index = 32, TruncOutPattern[32] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_defaultshipmtd
+BestCandidate = 
+Index = 33, MaxLength[33] = 255
+BestCandidate = 
+Index = 33, TruncOutPattern[33] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_resetshipmtd
+BestCandidate = 
+Index = 34, MaxLength[34] = 255
+BestCandidate = 
+Index = 34, TruncOutPattern[34] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_signin
+BestCandidate = 
+Index = 35, MaxLength[35] = 
+BestCandidate = 
+Index = 35, TruncOutPattern[35] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_carttotal
+BestCandidate = 9.85
+Index = 36, MaxLength[36] = 
+BestCandidate = 9.85
+Index = 36, TruncOutPattern[36] = 
+BestCandidate = 9.85
+
+Candidates: cs-uri-query.atl_cartqty
+BestCandidate = 1
+Index = 37, MaxLength[37] = 
+BestCandidate = 1
+Index = 37, TruncOutPattern[37] = (?-xism:\D)
+BestCandidate = 1
+
+Candidates: cs-uri-query.atl_shipopthtc
+BestCandidate = 
+Index = 38, MaxLength[38] = 
+BestCandidate = 
+Index = 38, TruncOutPattern[38] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_useraction
+BestCandidate = 
+Index = 39, MaxLength[39] = 
+BestCandidate = 
+Index = 39, TruncOutPattern[39] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_customerid
+BestCandidate = 
+Index = 40, MaxLength[40] = 
+BestCandidate = 
+Index = 40, TruncOutPattern[40] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_searchoption
+BestCandidate = 
+Index = 41, MaxLength[41] = 
+BestCandidate = 
+Index = 41, TruncOutPattern[41] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_searchterm
+BestCandidate = 
+Index = 42, MaxLength[42] = 
+BestCandidate = 
+Index = 42, TruncOutPattern[42] = 
+BestCandidate = 
+
+Candidates: cscookie.type
+BestCandidate = 
+Index = 43, MaxLength[43] = 
+BestCandidate = 
+Index = 43, TruncOutPattern[43] = (?-xism:\W)
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_page
+BestCandidate = 
+Index = 44, MaxLength[44] = 
+BestCandidate = 
+Index = 44, TruncOutPattern[44] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.uiaction
+BestCandidate = 
+Index = 45, MaxLength[45] = 
+BestCandidate = 
+Index = 45, TruncOutPattern[45] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_pagetype
+BestCandidate = 
+Index = 46, MaxLength[46] = 
+BestCandidate = 
+Index = 46, TruncOutPattern[46] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.productcode
+BestCandidate = 
+Index = 47, MaxLength[47] = 
+BestCandidate = 
+Index = 47, TruncOutPattern[47] = 
+BestCandidate = 
+
+Candidates: main.csreferer
+BestCandidate = http://cart4.barnesandnoble.com/op/request.aspx
+Index = 48, MaxLength[48] = 200
+BestCandidate = http://cart4.barnesandnoble.com/op/request.aspx
+Index = 48, TruncOutPattern[48] = (?-xism:\?|\;|&)
+BestCandidate = http://cart4.barnesandnoble.com/op/request.aspx
+
+Candidates: cs-uri-query.atl_sid
+BestCandidate = iD4TE2fNgU
+Index = 49, MaxLength[49] = 
+BestCandidate = iD4TE2fNgU
+Index = 49, TruncOutPattern[49] = 
+BestCandidate = iD4TE2fNgU
+
+Candidates: cs-uri-query.zipcode
+BestCandidate = 
+Index = 50, MaxLength[50] = 
+BestCandidate = 
+Index = 50, TruncOutPattern[50] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.note
+BestCandidate = 
+Index = 51, MaxLength[51] = 
+BestCandidate = 
+Index = 51, TruncOutPattern[51] = (?-xism:\D)
+BestCandidate = 
+
+Candidates: csreferer.q|csreferer.as_q|csreferer.as_epq|csreferer.as_oq|csreferer.as_eq
+BestCandidate = 
+Index = 52, MaxLength[52] = 
+BestCandidate = 
+Index = 52, TruncOutPattern[52] = 
+BestCandidate = 
+
+Candidates: 
+BestCandidate = 
+Index = 53, MaxLength[53] = 
+BestCandidate = 
+Index = 53, TruncOutPattern[53] = 
+BestCandidate = 
+
+Candidates: 
+BestCandidate = 
+Index = 54, MaxLength[54] = 
+BestCandidate = 
+Index = 54, TruncOutPattern[54] = 
+BestCandidate = 
+
+Candidates: 
+BestCandidate = 
+Index = 55, MaxLength[55] = 
+BestCandidate = 
+Index = 55, TruncOutPattern[55] = 
+BestCandidate = 
+
+Candidates: 
+BestCandidate = 
+Index = 56, MaxLength[56] = 
+BestCandidate = 
+Index = 56, TruncOutPattern[56] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.page
+BestCandidate = 
+Index = 57, MaxLength[57] = 
+BestCandidate = 
+Index = 57, TruncOutPattern[57] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.atl_useraction
+BestCandidate = 
+Index = 58, MaxLength[58] = 
+BestCandidate = 
+Index = 58, TruncOutPattern[58] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.pagetype
+BestCandidate = 
+Index = 59, MaxLength[59] = 
+BestCandidate = 
+Index = 59, TruncOutPattern[59] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.productcode
+BestCandidate = 
+Index = 60, MaxLength[60] = 
+BestCandidate = 
+Index = 60, TruncOutPattern[60] = 
+BestCandidate = 
+
+Candidates: cs-uri-query.ugrp
+BestCandidate = 
+Index = 61, MaxLength[61] = 
+BestCandidate = 
+Index = 61, TruncOutPattern[61] = (?-xism:\D)
+BestCandidate = 
+
+output	iD4TE2fNfU	69.113.239.204	200	2011-01-29 17:05:10	temp.gz	cart4.barnesandnoble.co													Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+6.1;+WOW64;+Trident/4.0;+GTB6.6;+SLCC2;+.NET+CLR+2.0.5	/op/request.aspx	signin	15				C_CONS_cart										9.85	1											http://cart4.barnesandnoble.com/op/request.aspx	iD4TE2fNgU												

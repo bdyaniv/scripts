@@ -1,0 +1,88 @@
+#!/bin/bash
+
+#i can up the max procs for most to 8 w/o much downside?
+files=`ls ex*.gz`
+echo ${files} | xargs --max-procs=8 -n 1 gzip -d $1
+echo ${files} > original_names.txt
+
+for file in `cat original_names.txt`
+do
+length=`echo $file | wc -c`
+let new_length=${length}-4
+newfile_name=`echo $file | cut -c1-${new_length}`
+#echo $newfile_name
+echo ${newfile_name} >> new_names.txt
+done
+
+cat new_names.txt | xargs --max-procs=8 -n 1 python gen_uuid_file.py $1
+new_files=`ls ex*.post.txt`
+let new_files_count=`ls ex*.post.txt | wc -l`
+echo ${new_files} | xargs --max-procs=8 -n 1 recode -f us..UTF8 $1
+#Can i do this
+echo ${new_files} | xargs --max-procs=8 -n 1 sed -i s/\\\\/\\\\\\\\/g $1
+#echo ${new_files} | xargs sed -i s/\\\\/\\\\\\\\/g $1
+
+loader_array[0]=10.225.75.243
+loader_array[1]=10.225.75.244
+loader_array[2]=10.225.75.245
+
+
+#do the above then get to these other parts
+#we probably dont have to do this using xargs max procs....we can launch all 3 and wait?
+let i=0
+let num_iteration=1
+declare -a file_array
+for file in ${new_files}
+do
+#    echo working0 on ${file}
+    file_array[${i}]=${file}
+    
+    if [ ${i} -eq 2 -o ${num_iteration} -eq ${new_files_count} ];
+    then
+        let j=0
+        #execute the ncluster loader commands....we've either hit the third iteration
+        # or have the final bits
+        #i want an ampersand a wait, right?
+        for (( j=0; j<=${i}; j++ ))
+        do
+
+#want to add a --data-prefix
+#make sure table ready
+#insert the filename and delim
+#also...probably want to change / deal with error lines now
+        
+#            echo ncluster_loader --loader ${loader_array[$j]} -f -D "" --columns uuid,hit_timestamp,line --el-discard-errors -U beehive -w beehive --skip-rows 1 bna.iis_logs_raw ${file_array[${j}]}
+            #            let j=${j}+1
+#            ncluster_loader --loader ${loader_array[$j]} -f -D "" --columns uuid,hit_timestamp,line --el-discard-errors -U beehive -w beehive --skip-rows 1 bna.iis_logs_raw ${file_array[${j}]} &
+            #echo ncluster_loader --loader ${loader_array[$j]} -a -f -D "" --columns uuid,hit_timestamp,line --el-discard-errors -U beehive -w beehive --skip-rows 1 iis.iis_logs_raw_parent ${file_array[${j}]}
+            #echo ncluster_loader --loader ${loader_array[$j]} -a -f -D "" --data-prefix "${file}" --columns srcfile,uuid,hit_timestamp,line --el-discard-errors -U beehive -w beehive --skip-rows 1 iis.iis_logs_raw_parent ${file_array[${j}]}
+<<<<<<< .mine
+            echo ncluster_loader --loader ${loader_array[$j]} -a -f -D "" --data-prefix "${file_array[${j}]}" --columns srcfile,uuid,hit_timestamp,line --el-discard-errors -U beehive -w b@@hive4nCluster --skip-rows 1 iis.iis_logs_raw_parent ${file_array[${j}]}
+=======
+            echo ncluster_loader --loader ${loader_array[$j]} -a -f -D "" --data-prefix "${file_array[${j}]}" --columns srcfile,uuid,hit_timestamp,line --el-discard-errors -U etl -w etl --skip-rows 1 iis.iis_logs_raw_parent ${file_array[${j}]}
+>>>>>>> .r1090
+            #            let j=${j}+1
+            #ncluster_loader --loader ${loader_array[$j]} -a -f -D "" --columns uuid,hit_timestamp,line --el-discard-errors -U beehive -w beehive --skip-rows 1 iis.iis_logs_raw_parent ${file_array[${j}]} &
+#            ncluster_loader --loader ${loader_array[$j]} -a -f -D ""  --data-prefix "${file}" --columns srcfile,uuid,hit_timestamp,line --el-discard-errors -U beehive -w beehive --skip-rows 1 iis.iis_logs_raw_parent ${file_array[${j}]} &
+<<<<<<< .mine
+            ncluster_loader --loader ${loader_array[$j]} -a -f -D ""  --data-prefix "${file_array[${j}]}" --columns srcfile,uuid,hit_timestamp,line --el-discard-errors -U beehive -w b@@hive4nCluster --skip-rows 1 --verbose iis.iis_logs_raw_parent ${file_array[${j}]} &
+=======
+            ncluster_loader --loader ${loader_array[$j]} -a -f -D ""  --data-prefix "${file_array[${j}]}" --columns srcfile,uuid,hit_timestamp,line --el-discard-errors -U etl -w etl --skip-rows 1 --verbose iis.iis_logs_raw_parent ${file_array[${j}]} &
+>>>>>>> .r1090
+
+        done
+        wait
+        
+    fi
+    if [ ${i} -eq 2 ];
+    then
+        let i=0
+        declare -a file_array
+    else
+        let i=${i}+1
+    fi
+    let num_iteration=${num_iteration}+1
+    
+done
+#let MOD=$[ ( $RANDOM % 3 ) ]
+

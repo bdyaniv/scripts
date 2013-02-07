@@ -1,0 +1,774 @@
+Checking for lock file /tmp/.iislock
+Acquired lock file /tmp/.iislock
+deleting simple.htm records - these are just server testing...
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+-------------------------------------
+Processing for 20111215
+-------------------------------------
+
+Sat Dec 17 03:02:54 EST 2011
+
+Timing is on.
+
+           000 - INIT
+
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+*** Truncating staging tables before workflow starts ***
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+Sat Dec 17 03:02:54 EST 2011
+
+Timing is on.
+
+            200 - LOAD_BN_IISLOGS   
+
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+Sat Dec 17 03:02:54 EST 2011
+
+Timing is on.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+            250 - LOAD_BN_HITS_SP   
+
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+Sat Dec 17 03:02:54 EST 2011
+
+Timing is on.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+           300 - DYNAMIC FILTER
+
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+Sat Dec 17 03:02:55 EST 2011
+
+Timing is on.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+           600 - LOAD RESOURCES
+
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+Sat Dec 17 03:02:55 EST 2011
+
+Timing is on.
+
+           650 - LOAD_BN_SESSION_STAGE
+
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+Sat Dec 17 03:02:56 EST 2011
+
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+           660 - LOAD_BN_SESSION_UPDATE_STAGE
+
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+Sat Dec 17 03:02:56 EST 2011
+
+Timing is on.
+
+           670 - LOAD_BN_SESSION_20111215.UPDATES
+
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+Sat Dec 17 03:02:56 EST 2011
+
+Timing is on.
+
+           700 - LOAD_BN_SESSION
+
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+Sat Dec 17 03:02:57 EST 2011
+
+Timing is on.
+
+            750 - LOAD_BN_SESSION_SUMMARY   
+
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+Sat Dec 17 03:02:57 EST 2011
+
+Timing is on.
+
+           800 - LOAD_BN_HITS
+
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+Sat Dec 17 03:02:57 EST 2011
+
+Timing is on.
+
+            900 - LOAD_CLICKSTREAM   
+
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+Sat Dec 17 03:02:57 EST 2011
+
+Timing is on.
+
+            1000 - PAGE_VIEW_SUMMARY  
+
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+
+Sat Dec 17 03:02:58 EST 2011
+
+
+2000 - WRAP UP 
+
+Timing is on.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+ERROR:  There are currently not enough vworkers available to execute queries. The cluster may need to be activated through the AMC. Contact your database administrator for further assistance.
+Sat Dec 17 03:02:58 EST 2011
+Removing lock file and waiting for a minute
+Total time taken:  1  minutes.
+Running time of run.sh 20111215: 1 minutes
+Checking for lock file /tmp/.iislock
+Acquired lock file /tmp/.iislock
+deleting simple.htm records - these are just server testing...
+DELETE 5364148
+-------------------------------------
+Processing for 20111215
+-------------------------------------
+
+Sat Dec 17 22:47:35 EST 2011
+
+Timing is on.
+
+           000 - INIT
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 271 ms
+*** Truncating staging tables before workflow starts ***
+SET
+Time: 0 hrs, 0 mins, 0 secs, 6 ms
+GRANT
+Time: 0 hrs, 0 mins, 37 secs, 810 ms
+END
+Time: 0 hrs, 0 mins, 24 secs, 83 ms
+
+Sat Dec 17 22:48:38 EST 2011
+
+Timing is on.
+
+            200 - LOAD_BN_IISLOGS   
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 174 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 6 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 720 ms
+INSERT 0 66308492
+Time: 0 hrs, 11 mins, 18 secs, 993 ms
+END
+Time: 0 hrs, 1 mins, 8 secs, 390 ms
+ALTER TABLE
+Time: 0 hrs, 9 mins, 40 secs, 212 ms
+
+Sat Dec 17 23:10:47 EST 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 517 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 7 ms
+
+            250 - LOAD_BN_HITS_SP   
+
+TRUNCATE
+Time: 0 hrs, 0 mins, 7 secs, 825 ms
+INSERT 0 24517562
+Time: 0 hrs, 4 mins, 38 secs, 987 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 3 secs, 455 ms
+END
+Time: 0 hrs, 0 mins, 36 secs, 560 ms
+
+Sat Dec 17 23:16:15 EST 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 944 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 11 ms
+
+           300 - DYNAMIC FILTER
+
+TRUNCATE
+Time: 0 hrs, 0 mins, 11 secs, 14 ms
+INSERT 0 21859994
+Time: 0 hrs, 0 mins, 3 secs, 22 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 2 secs, 534 ms
+ Total records in web_click_cnt 
+--------------------------------
+                       21859994
+(1 row)
+
+Time: 0 hrs, 0 mins, 29 secs, 337 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 14 secs, 289 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 45 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 2 secs, 982 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 41 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 3 secs, 381 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 1 secs, 619 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 64 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 2 secs, 36 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 8 secs, 387 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 729 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 4 secs, 900 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 42 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 62 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 1 secs, 705 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 62 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 1 secs, 287 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 218 ms
+    tablename     |    attr_name    | attr_value 
+------------------+-----------------+------------
+ BN_FILTER_SPIDER | CLK_USER_SD_MPL | 10
+ BN_FILTER_SPIDER | IP_USER_SD_MPL  | 1
+ BN_FILTER_SPIDER | IP_USER_RATIO   | .955
+ BN_FILTER_SPIDER | CLK_USER_MEAN   | 8.784
+ BN_FILTER_SPIDER | CLK_USER_SD     | 33.374
+ BN_FILTER_SPIDER | IP_USER_MEAN    | 16.125
+ BN_FILTER_SPIDER | IP_USER_SD      | 3826.139
+(7 rows)
+
+Time: 0 hrs, 0 mins, 2 secs, 62 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 9 secs, 719 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 5 secs, 1 ms
+ l_mean_sd_mpl 
+---------------
+       342.524
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 502 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 529 ms
+INSERT 0 622
+Time: 0 hrs, 0 mins, 8 secs, 803 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 678 ms
+ Total click_user bn_spider_ip records 
+---------------------------------------
+                                   622
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 913 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 3 secs, 114 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 29 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 6 secs, 658 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 52 ms
+DROP 
+Time: 0 hrs, 0 mins, 0 secs, 98 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 1 secs, 677 ms
+ l_mean_sd_mpl | l_ratio 
+---------------+---------
+      3842.264 |   0.955
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 282 ms
+INSERT 0 17847602
+Time: 0 hrs, 0 mins, 32 secs, 309 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 322 ms
+ Total ip_user_filter bn_spider_ip records 
+-------------------------------------------
+                                  17847602
+(1 row)
+
+Time: 0 hrs, 0 mins, 3 secs, 202 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 2 secs, 853 ms
+INSERT 0 20340243
+Time: 0 hrs, 1 mins, 21 secs, 15 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 15 secs, 773 ms
+ bn_hits_stage 
+---------------
+      20340243
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 19 ms
+INSERT 0 18626282
+Time: 0 hrs, 0 mins, 47 secs, 632 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 6 secs, 82 ms
+ bn_hits_sp_20111215 
+---------------------
+            43143844
+(1 row)
+
+Time: 0 hrs, 0 mins, 6 secs, 302 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 8 secs, 294 ms
+INSERT 0 2824405
+Time: 0 hrs, 0 mins, 3 secs, 819 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 3 secs, 613 ms
+ bn_hits_client_20111215 
+-------------------------
+                 2824405
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 181 ms
+END
+Time: 0 hrs, 0 mins, 30 secs, 271 ms
+
+Sat Dec 17 23:22:33 EST 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 7 secs, 711 ms
+
+           600 - LOAD RESOURCES
+
+SET
+Time: 0 hrs, 0 mins, 0 secs, 6 ms
+CREATE TABLE
+Time: 0 hrs, 1 mins, 38 secs, 101 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 2 secs, 397 ms
+ tmp_a_count 
+-------------
+     1341596
+(1 row)
+
+Time: 0 hrs, 0 mins, 4 secs, 289 ms
+UPDATE 0
+Time: 0 hrs, 0 mins, 10 secs, 386 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 856 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 4 secs, 932 ms
+INSERT 0 441124
+Time: 0 hrs, 1 mins, 32 secs, 946 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 781 ms
+ first_resource_id | last_resource_id 
+-------------------+------------------
+          67761140 |         68202263
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 574 ms
+INSERT 0 441124
+Time: 0 hrs, 0 mins, 5 secs, 242 ms
+ total_resources 
+-----------------
+        68177800
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 451 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 603 ms
+END
+Time: 0 hrs, 0 mins, 16 secs, 788 ms
+VACUUM
+Time: 0 hrs, 0 mins, 49 secs, 340 ms
+
+Sat Dec 17 23:27:29 EST 2011
+
+Timing is on.
+
+           650 - LOAD_BN_SESSION_STAGE
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 443 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 8 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 13 ms
+CREATE TABLE
+Time: 0 hrs, 1 mins, 0 secs, 646 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 4 secs, 576 ms
+ tmp_sessionized_stage 
+-----------------------
+              20340243
+(1 row)
+
+Time: 0 hrs, 0 mins, 26 secs, 707 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 621 ms
+INSERT 0 3559230
+Time: 0 hrs, 1 mins, 38 secs, 267 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 3 secs, 320 ms
+CREATE TABLE
+Time: 0 hrs, 1 mins, 42 secs, 924 ms
+CREATE INDEX
+Time: 0 hrs, 0 mins, 0 secs, 740 ms
+ tmp_first_last 
+----------------
+        3559230
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 51 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 980 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 11 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 2 secs, 122 ms
+DROP 
+Time: 0 hrs, 0 mins, 0 secs, 343 ms
+INSERT 0 3559230
+Time: 0 hrs, 0 mins, 8 secs, 465 ms
+ bn_session_stage 
+------------------
+          3559230
+(1 row)
+
+Time: 0 hrs, 0 mins, 8 secs, 729 ms
+CREATE INDEX
+Time: 0 hrs, 0 mins, 2 secs, 199 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 78 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 2 secs, 983 ms
+END
+Time: 0 hrs, 0 mins, 55 secs, 482 ms
+
+Sat Dec 17 23:33:51 EST 2011
+
+BEGIN
+
+           660 - LOAD_BN_SESSION_UPDATE_STAGE
+
+SET
+TRUNCATE
+INSERT 0 0
+END
+
+Sat Dec 17 23:34:18 EST 2011
+
+Timing is on.
+
+           670 - LOAD_BN_SESSION_20111215.UPDATES
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 147 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 5 ms
+UPDATE 0
+Time: 0 hrs, 0 mins, 0 secs, 405 ms
+END
+Time: 0 hrs, 0 mins, 7 secs, 210 ms
+VACUUM
+Time: 0 hrs, 0 mins, 28 secs, 452 ms
+
+Sat Dec 17 23:34:54 EST 2011
+
+Timing is on.
+
+           700 - LOAD_BN_SESSION
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 129 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 6 ms
+INSERT 0 3559230
+Time: 0 hrs, 0 mins, 29 secs, 866 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 2 secs, 150 ms
+END
+Time: 0 hrs, 0 mins, 24 secs, 962 ms
+
+Sat Dec 17 23:35:52 EST 2011
+
+Timing is on.
+
+            750 - LOAD_BN_SESSION_SUMMARY   
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 154 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 5 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 15 secs, 75 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 10 secs, 542 ms
+INSERT 0 1107497
+Time: 0 hrs, 0 mins, 9 secs, 338 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 243 ms
+ count(1) 
+----------
+  1107497
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 306 ms
+END
+Time: 0 hrs, 0 mins, 6 secs, 929 ms
+
+Sat Dec 17 23:36:35 EST 2011
+
+Timing is on.
+
+           800 - LOAD_BN_HITS
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 415 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 7 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 12 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 12 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 13 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 3 secs, 483 ms
+INSERT 0 20340243
+Time: 0 hrs, 0 mins, 3 secs, 364 ms
+ count(1) 
+----------
+ 20340243
+(1 row)
+
+Time: 0 hrs, 0 mins, 4 secs, 378 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 3 secs, 341 ms
+END
+Time: 0 hrs, 0 mins, 38 secs, 842 ms
+
+Sat Dec 17 23:37:31 EST 2011
+
+Timing is on.
+
+            900 - LOAD_CLICKSTREAM   
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 234 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 5 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 2 secs, 693 ms
+INSERT 0 20340243
+Time: 0 hrs, 1 mins, 26 secs, 379 ms
+ count(1) 
+----------
+ 20340243
+(1 row)
+
+Time: 0 hrs, 0 mins, 2 secs, 168 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 2 secs, 669 ms
+END
+Time: 0 hrs, 0 mins, 37 secs, 863 ms
+
+Sat Dec 17 23:39:43 EST 2011
+
+Timing is on.
+
+            1000 - PAGE_VIEW_SUMMARY  
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 300 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 7 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 14 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 7 secs, 779 ms
+INSERT 0 1375328
+Time: 0 hrs, 0 mins, 5 secs, 413 ms
+ count(1) 
+----------
+  1375328
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 884 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 717 ms
+END
+Time: 0 hrs, 0 mins, 34 secs, 922 ms
+
+Sat Dec 17 23:40:33 EST 2011
+
+
+2000 - WRAP UP 
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 509 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 9 secs, 765 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 4 secs, 395 ms
+END
+Time: 0 hrs, 0 mins, 23 secs, 614 ms
+Sat Dec 17 23:41:12 EST 2011
+Removing lock file and waiting for a minute
+Total time taken:  56  minutes.

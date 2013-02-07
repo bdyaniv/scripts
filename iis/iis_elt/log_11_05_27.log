@@ -1,0 +1,118 @@
+Checking for lock file /tmp/.iislock
+Acquired lock file /tmp/.iislock
+-------------------------------------
+Processing for 20110527
+-------------------------------------
+
+Mon Jun 6 17:22:55 EDT 2011
+
+Can't locate Date/Manip.pm in @INC (@INC contains: /home/beehive/perl-5.10.1/lib/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/5.10.1 /home/beehive/perl-5.10.1/lib/site_perl/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/site_perl/5.10.1 .) at ../000_BIN/transform_daily.pl line 15.
+BEGIN failed--compilation aborted at ../000_BIN/transform_daily.pl line 15.
+act: could not connect to server: Connection refused
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 2406?
+
+Mon Jun 6 17:22:55 EDT 2011
+
+Can't locate Date/Manip.pm in @INC (@INC contains: /home/beehive/perl-5.10.1/lib/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/5.10.1 /home/beehive/perl-5.10.1/lib/site_perl/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/site_perl/5.10.1 .) at ../000_BIN/transform_daily.pl line 15.
+BEGIN failed--compilation aborted at ../000_BIN/transform_daily.pl line 15.
+act: could not connect to server: Connection refused
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 2406?
+
+Mon Jun 6 17:22:55 EDT 2011
+
+Can't locate Date/Manip.pm in @INC (@INC contains: /home/beehive/perl-5.10.1/lib/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/5.10.1 /home/beehive/perl-5.10.1/lib/site_perl/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/site_perl/5.10.1 .) at ../000_BIN/transform_daily.pl line 15.
+BEGIN failed--compilation aborted at ../000_BIN/transform_daily.pl line 15.
+act: could not connect to server: Connection refused
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 2406?
+
+Mon Jun 6 17:22:55 EDT 2011
+
+Can't locate Date/Manip.pm in @INC (@INC contains: /home/beehive/perl-5.10.1/lib/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/5.10.1 /home/beehive/perl-5.10.1/lib/site_perl/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/site_perl/5.10.1 .) at ../000_BIN/transform_daily.pl line 15.
+BEGIN failed--compilation aborted at ../000_BIN/transform_daily.pl line 15.
+act: could not connect to server: Connection refused
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 2406?
+
+Mon Jun 6 17:22:55 EDT 2011
+
+act: could not connect to server: Connection refused
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 2406?
+
+Mon Jun 6 17:22:55 EDT 2011
+
+Can't locate Date/Manip.pm in @INC (@INC contains: /home/beehive/perl-5.10.1/lib/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/5.10.1 /home/beehive/perl-5.10.1/lib/site_perl/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/site_perl/5.10.1 .) at ../000_BIN/transform_daily.pl line 15.
+BEGIN failed--compilation aborted at ../000_BIN/transform_daily.pl line 15.
+act: could not connect to server: Connection refused
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 2406?
+
+Mon Jun 6 17:22:55 EDT 2011
+
+Can't locate Date/Manip.pm in @INC (@INC contains: /home/beehive/perl-5.10.1/lib/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/5.10.1 /home/beehive/perl-5.10.1/lib/site_perl/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/site_perl/5.10.1 .) at ../000_BIN/transform_daily.pl line 15.
+BEGIN failed--compilation aborted at ../000_BIN/transform_daily.pl line 15.
+act: could not connect to server: Connection refused
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 2406?
+
+Mon Jun 6 17:22:55 EDT 2011
+
+Can't locate Date/Manip.pm in @INC (@INC contains: /home/beehive/perl-5.10.1/lib/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/5.10.1 /home/beehive/perl-5.10.1/lib/site_perl/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/site_perl/5.10.1 .) at ../000_BIN/transform_daily.pl line 15.
+BEGIN failed--compilation aborted at ../000_BIN/transform_daily.pl line 15.
+act: could not connect to server: Connection refused
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 2406?
+
+Mon Jun 6 17:22:55 EDT 2011
+
+Can't locate Date/Manip.pm in @INC (@INC contains: /home/beehive/perl-5.10.1/lib/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/5.10.1 /home/beehive/perl-5.10.1/lib/site_perl/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/site_perl/5.10.1 .) at ../000_BIN/transform_daily.pl line 15.
+BEGIN failed--compilation aborted at ../000_BIN/transform_daily.pl line 15.
+act: could not connect to server: Connection refused
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 2406?
+
+Mon Jun 6 17:22:55 EDT 2011
+
+Can't locate Date/Manip.pm in @INC (@INC contains: /home/beehive/perl-5.10.1/lib/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/5.10.1 /home/beehive/perl-5.10.1/lib/site_perl/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/site_perl/5.10.1 .) at ../000_BIN/transform_daily.pl line 15.
+BEGIN failed--compilation aborted at ../000_BIN/transform_daily.pl line 15.
+act: could not connect to server: Connection refused
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 2406?
+
+Mon Jun 6 17:22:55 EDT 2011
+
+Can't locate Date/Manip.pm in @INC (@INC contains: /home/beehive/perl-5.10.1/lib/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/5.10.1 /home/beehive/perl-5.10.1/lib/site_perl/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/site_perl/5.10.1 .) at ../000_BIN/transform_daily.pl line 15.
+BEGIN failed--compilation aborted at ../000_BIN/transform_daily.pl line 15.
+act: could not connect to server: Connection refused
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 2406?
+
+Mon Jun 6 17:22:55 EDT 2011
+
+Can't locate Date/Manip.pm in @INC (@INC contains: /home/beehive/perl-5.10.1/lib/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/5.10.1 /home/beehive/perl-5.10.1/lib/site_perl/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/site_perl/5.10.1 .) at ../000_BIN/transform_daily.pl line 15.
+BEGIN failed--compilation aborted at ../000_BIN/transform_daily.pl line 15.
+act: could not connect to server: Connection refused
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 2406?
+
+Mon Jun 6 17:22:55 EDT 2011
+
+Can't locate Date/Manip.pm in @INC (@INC contains: /home/beehive/perl-5.10.1/lib/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/5.10.1 /home/beehive/perl-5.10.1/lib/site_perl/5.10.1/x86_64-linux /home/beehive/perl-5.10.1/lib/site_perl/5.10.1 .) at ../000_BIN/transform_daily.pl line 15.
+BEGIN failed--compilation aborted at ../000_BIN/transform_daily.pl line 15.
+act: could not connect to server: Connection refused
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 2406?
+
+Mon Jun 6 17:22:55 EDT 2011
+
+
+2000 - WRAP UP 
+
+act: could not connect to server: Connection refused
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 2406?
+Mon Jun 6 17:22:55 EDT 2011
+Removing lock file and waiting for a minute

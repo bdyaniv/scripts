@@ -1,0 +1,58 @@
+Timing is on.
+
+           650 - LOAD_BN_SESSION_STAGE
+
+BEGIN
+Time: 0 hrs, 0 mins, 6 secs, 239 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 11 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 48 ms
+CREATE TABLE
+Time: 0 hrs, 11 mins, 24 secs, 719 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 47 secs, 902 ms
+ tmp_sessionized_stage 
+-----------------------
+              35397065
+(1 row)
+
+Time: 0 hrs, 0 mins, 21 secs, 496 ms
+DROP 
+Time: 0 hrs, 0 mins, 4 secs, 529 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 13 secs, 944 ms
+INSERT 0 5480012
+Time: 0 hrs, 5 mins, 21 secs, 293 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 11 secs, 980 ms
+CREATE TABLE
+Time: 0 hrs, 3 mins, 41 secs, 464 ms
+CREATE INDEX
+Time: 0 hrs, 0 mins, 3 secs, 688 ms
+ tmp_first_last 
+----------------
+        5480012
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 334 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 104 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 24 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 26 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 3 secs, 811 ms
+INSERT 0 5480012
+Time: 0 hrs, 0 mins, 30 secs, 621 ms
+ kg_test_ip_bn_session_stage 
+-----------------------------
+                     5480012
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 739 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 502 ms
+END
+Time: 0 hrs, 0 mins, 45 secs, 118 ms

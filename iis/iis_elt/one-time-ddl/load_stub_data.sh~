@@ -1,0 +1,16 @@
+#!/bin/bash
+# One time DDL create of the tables and stub data below should be
+# removed eventually for workflow ...
+#
+# Load some stub data
+act  -d beehive -U etl -w etl -c "COPY iis.resource_sub_category_map FROM STDIN WITH CSV" < stubdata/resource_sub_category_map.csv
+act  -d beehive -U etl -w etl -c "COPY iis.last_key_used FROM STDIN WITH CSV" < stubdata/last_key_used.csv
+act  -d beehive -U etl -w etl -c "COPY iis.events FROM STDIN WITH CSV" < stubdata/events.csv
+act  -d beehive -U etl -w etl << EOF1
+set search_path = 'iis';
+ANALYZE resource_sub_category_map;
+ANALYZE last_key_used;
+ANALYZE events;
+EOF1
+
+

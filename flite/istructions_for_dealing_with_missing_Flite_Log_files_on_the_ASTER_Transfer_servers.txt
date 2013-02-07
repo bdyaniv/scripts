@@ -1,0 +1,31 @@
+Instructions for dealing with missing Flite Log files on the ASTER Transfer servers.
+Gene Matusovsky
+	B&N.com System Management Group
+	212-414-6479
+
+
+For the servers listed in the “Missing Servers in FTP:” email notification we must verify that Jetty log files exist for each of the Flite servers shown on the list.
+
+The examples below will show instructions for pwbflite01, substitute for pwbflite01 for all other FLITE servers that are listed in the email.
+
+
+1)	Login to the server where logfiles were missed.  
+ssh pwbflite01
+2)	Change directory to the log file store location (/var/log/jetty/weblogs)
+cd /var/log/jetty/weblogs
+3)	Verify logfiles exist.
+ls /var/log/jetty/weblogs/flite-access.2011-10-03*gz
+4)	If the logfiles are missing, contact the B&N.com Flite Developer group notifying them that Flite logs for today’s date are missing.
+
+
+5)	If the logfiles exist, make sure a copy of these logfiles exists on the ASTER Transfer Feed Server PNJTRANSFERCL. Login to PNJTRANSFERCL.
+ssh pnjtransfercl
+6)	Change directory to the Flite log file store location (/primary/asterftp/feeds/flite/landing/)
+cd /primary/asterftp/feeds/flite/landing/
+7)	Verify todays and most recent logfile exist on the ASTER transfer feed server.
+8)	For any logfile that exists a Flite Server but is missing on the Transfer server, it should be copied manually. This can be done any number of ways, including FTP or SCP. Below is an SCP example.
+9)	SUDO to weblogs user on the PNJTRANSFERCL server
+10)	As the weblogs user, files can be copied from the flite servers without requiring any passwords, since SSH Key trust has been setup for file transfers between PNJTRANSFERCL and the FLITE servers.
+[weblogs@pnjtransfer01 ~]$ cp pwbflite01: /var/log/jetty/weblogs/flite-access.2011-10-03_11.*gz  /primary/asterftp/feeds/flite/landing
+
+11)	If there any issues coping files between systems, please contact the B&N.com Systems Management group, B&N.com SA group or B&N.com Network group on call list.

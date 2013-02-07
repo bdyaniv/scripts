@@ -1,0 +1,41 @@
+Timing is on.
+
+           650 - LOAD_BN_SESSION_STAGE
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 565 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 18 ms
+CREATE TABLE
+Time: 0 hrs, 3 mins, 39 secs, 3 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 3 secs, 82 ms
+ tmp_sessionized_stage 
+-----------------------
+              35397065
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 858 ms
+DROP 
+Time: 0 hrs, 0 mins, 0 secs, 987 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 3 secs, 908 ms
+INSERT 0 4840472
+Time: 0 hrs, 1 mins, 52 secs, 637 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 11 secs, 177 ms
+CREATE TABLE
+Time: 0 hrs, 2 mins, 31 secs, 211 ms
+ERROR:  column "user_agent" does not exist
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+ABORT
+Time: 0 hrs, 0 mins, 0 secs, 54 ms

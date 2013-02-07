@@ -1,0 +1,2023 @@
+Checking for lock file /tmp/.iislock
+Acquired lock file /tmp/.iislock
+-------------------------------------
+Processing for 20110625
+-------------------------------------
+
+Sun Jun 26 13:32:02 EDT 2011
+
+Timing is on.
+
+           000 - INIT
+
+BEGIN
+Time: 0 hrs, 0 mins, 5 secs, 975 ms
+*** Truncating staging tables before workflow starts ***
+SET
+Time: 0 hrs, 0 mins, 0 secs, 11 ms
+GRANT
+Time: 0 hrs, 0 mins, 39 secs, 853 ms
+END
+Time: 0 hrs, 5 mins, 38 secs, 213 ms
+
+Sun Jun 26 13:38:27 EDT 2011
+
+Timing is on.
+
+            200 - LOAD_BN_IISLOGS   
+
+BEGIN
+Time: 0 hrs, 0 mins, 3 secs, 611 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 8 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 7 secs, 382 ms
+INSERT 0 51032864
+Time: 0 hrs, 9 mins, 48 secs, 486 ms
+END
+Time: 0 hrs, 0 mins, 19 secs, 243 ms
+ALTER TABLE
+Time: 0 hrs, 6 mins, 38 secs, 156 ms
+
+Sun Jun 26 13:55:24 EDT 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 3 secs, 24 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 16 ms
+
+            250 - LOAD_BN_HITS_SP   
+
+TRUNCATE
+Time: 0 hrs, 0 mins, 4 secs, 419 ms
+INSERT 0 23375844
+Time: 0 hrs, 3 mins, 29 secs, 207 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 37 secs, 942 ms
+END
+Time: 0 hrs, 0 mins, 16 secs, 912 ms
+
+Sun Jun 26 13:59:56 EDT 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 177 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 11 ms
+
+           300 - DYNAMIC FILTER
+
+TRUNCATE
+Time: 0 hrs, 0 mins, 12 secs, 956 ms
+INSERT 0 8467611
+Time: 0 hrs, 0 mins, 16 secs, 305 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 2 secs, 882 ms
+ Total records in web_click_cnt 
+--------------------------------
+                        8467611
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 802 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 28 secs, 355 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 370 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 8 secs, 337 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 142 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 1 secs, 932 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 0 secs, 831 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 85 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 1 secs, 265 ms
+CREATE TABLE
+Time: 0 hrs, 1 mins, 53 secs, 190 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 426 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 4 secs, 406 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 81 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 235 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 0 secs, 472 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 91 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 1 secs, 599 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 136 ms
+    tablename     |    attr_name    | attr_value 
+------------------+-----------------+------------
+ BN_FILTER_SPIDER | CLK_USER_SD_MPL | 10
+ BN_FILTER_SPIDER | IP_USER_SD_MPL  | 1
+ BN_FILTER_SPIDER | IP_USER_RATIO   | .955
+ BN_FILTER_SPIDER | CLK_USER_MEAN   | 14.562
+ BN_FILTER_SPIDER | CLK_USER_SD     | 98.895
+ BN_FILTER_SPIDER | IP_USER_MEAN    | 12.644
+ BN_FILTER_SPIDER | IP_USER_SD      | 1191.384
+(7 rows)
+
+Time: 0 hrs, 0 mins, 0 secs, 656 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 4 secs, 806 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 2 secs, 303 ms
+ l_mean_sd_mpl 
+---------------
+      1003.512
+(1 row)
+
+Time: 0 hrs, 0 mins, 2 secs, 648 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 7 secs, 209 ms
+INSERT 0 140
+Time: 0 hrs, 0 mins, 22 secs, 803 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 633 ms
+ Total click_user bn_spider_ip records 
+---------------------------------------
+                                   140
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 867 ms
+CREATE TABLE
+Time: 0 hrs, 1 mins, 57 secs, 655 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 525 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 24 secs, 759 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 90 ms
+DROP 
+Time: 0 hrs, 0 mins, 0 secs, 300 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 1 secs, 552 ms
+ l_mean_sd_mpl | l_ratio 
+---------------+---------
+      1204.028 |   0.955
+(1 row)
+
+Time: 0 hrs, 0 mins, 2 secs, 277 ms
+INSERT 0 6760735
+Time: 0 hrs, 0 mins, 6 secs, 377 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 408 ms
+ Total ip_user_filter bn_spider_ip records 
+-------------------------------------------
+                                   6760735
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 333 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 2 secs, 475 ms
+ERROR:  invalid input syntax for type numeric: "9781451629187	5"
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+ABORT
+Time: 0 hrs, 0 mins, 0 secs, 20 ms
+
+Sun Jun 26 14:06:47 EDT 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 692 ms
+
+           600 - LOAD RESOURCES
+
+SET
+Time: 0 hrs, 0 mins, 0 secs, 11 ms
+CREATE TABLE
+Time: 0 hrs, 2 mins, 12 secs, 1 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 4 secs, 139 ms
+ tmp_a_count 
+-------------
+      457919
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 85 ms
+UPDATE 0
+Time: 0 hrs, 0 mins, 4 secs, 561 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 870 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 555 ms
+INSERT 0 0
+Time: 0 hrs, 2 mins, 25 secs, 798 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 25 ms
+ first_resource_id | last_resource_id 
+-------------------+------------------
+                   |                 
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 318 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 1 secs, 3 ms
+ total_resources 
+-----------------
+        20070620
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 207 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 732 ms
+END
+Time: 0 hrs, 0 mins, 5 secs, 429 ms
+VACUUM
+Time: 0 hrs, 0 mins, 39 secs, 750 ms
+
+Sun Jun 26 14:12:26 EDT 2011
+
+Timing is on.
+
+           650 - LOAD_BN_SESSION_STAGE
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 200 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 41 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 57 secs, 925 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 7 secs, 318 ms
+ tmp_sessionized_stage 
+-----------------------
+              17000692
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 470 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 117 ms
+INSERT 0 1871783
+Time: 0 hrs, 0 mins, 28 secs, 662 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 998 ms
+CREATE TABLE
+Time: 0 hrs, 2 mins, 6 secs, 493 ms
+CREATE INDEX
+Time: 0 hrs, 0 mins, 0 secs, 867 ms
+ tmp_first_last 
+----------------
+        1871783
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 281 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 658 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 23 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 33 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 490 ms
+DROP
+Time: 0 hrs, 0 mins, 0 secs, 319 ms
+INSERT 0 1871783
+Time: 0 hrs, 0 mins, 7 secs, 152 ms
+ bn_session_stage 
+------------------
+          1871783
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 555 ms
+CREATE INDEX
+Time: 0 hrs, 0 mins, 2 secs, 352 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 653 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 2 secs, 83 ms
+END
+Time: 0 hrs, 0 mins, 14 secs, 296 ms
+
+Sun Jun 26 14:16:44 EDT 2011
+
+BEGIN
+
+           660 - LOAD_BN_SESSION_UPDATE_STAGE
+
+SET
+TRUNCATE
+INSERT 0 0
+END
+
+Sun Jun 26 14:16:55 EDT 2011
+
+Timing is on.
+
+           670 - LOAD_BN_SESSION_20110625.UPDATES
+
+BEGIN
+Time: 0 hrs, 0 mins, 6 secs, 101 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+UPDATE 0
+Time: 0 hrs, 0 mins, 1 secs, 822 ms
+END
+Time: 0 hrs, 0 mins, 11 secs, 744 ms
+VACUUM
+Time: 0 hrs, 1 mins, 27 secs, 889 ms
+
+Sun Jun 26 14:18:43 EDT 2011
+
+Timing is on.
+
+           700 - LOAD_BN_SESSION
+
+BEGIN
+Time: 0 hrs, 0 mins, 3 secs, 62 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 7 secs, 605 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 74 ms
+END
+Time: 0 hrs, 0 mins, 11 secs, 58 ms
+
+Sun Jun 26 14:19:05 EDT 2011
+
+Timing is on.
+
+            750 - LOAD_BN_SESSION_SUMMARY   
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 190 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 25 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 10 secs, 617 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 2 secs, 262 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 1 secs, 356 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 20 ms
+ count(1) 
+----------
+        0
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 320 ms
+END
+Time: 0 hrs, 0 mins, 17 secs, 961 ms
+
+Sun Jun 26 14:19:39 EDT 2011
+
+Timing is on.
+
+           800 - LOAD_BN_HITS
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 481 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 11 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 17 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 19 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 16 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 4 secs, 529 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 1 secs, 851 ms
+ count(1) 
+----------
+        0
+(1 row)
+
+Time: 0 hrs, 0 mins, 4 secs, 696 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 25 ms
+END
+Time: 0 hrs, 0 mins, 5 secs, 945 ms
+
+Sun Jun 26 14:19:58 EDT 2011
+
+Timing is on.
+
+            900 - LOAD_CLICKSTREAM   
+
+BEGIN
+Time: 0 hrs, 0 mins, 7 secs, 450 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 13 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 360 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 15 secs, 802 ms
+ count(1) 
+----------
+        0
+(1 row)
+
+Time: 0 hrs, 0 mins, 2 secs, 15 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 24 ms
+END
+Time: 0 hrs, 0 mins, 3 secs, 632 ms
+
+Sun Jun 26 14:20:29 EDT 2011
+
+Timing is on.
+
+            1000 - PAGE_VIEW_SUMMARY  
+
+BEGIN
+Time: 0 hrs, 0 mins, 15 secs, 330 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 62 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 71 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 2 secs, 681 ms
+ count(1) 
+----------
+        0
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 150 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 20 ms
+END
+Time: 0 hrs, 0 mins, 3 secs, 797 ms
+
+Sun Jun 26 14:20:52 EDT 2011
+
+
+2000 - WRAP UP 
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 2 secs, 801 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 715 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 2 secs, 27 ms
+END
+Time: 0 hrs, 0 mins, 10 secs, 35 ms
+Sun Jun 26 14:21:08 EDT 2011
+Removing lock file and waiting for a minute
+Running time of run.sh 20110625: 3006 seconds
+Checking for lock file /tmp/.iislock
+Acquired lock file /tmp/.iislock
+-------------------------------------
+Processing for 20110625
+-------------------------------------
+
+Mon Jun 27 11:40:00 EDT 2011
+
+Timing is on.
+
+           000 - INIT
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 797 ms
+*** Truncating staging tables before workflow starts ***
+SET
+Time: 0 hrs, 0 mins, 0 secs, 11 ms
+GRANT
+Time: 0 hrs, 0 mins, 20 secs, 243 ms
+END
+Time: 0 hrs, 0 mins, 3 secs, 687 ms
+
+Mon Jun 27 11:40:26 EDT 2011
+
+Timing is on.
+
+            200 - LOAD_BN_IISLOGS   
+
+BEGIN
+Time: 0 hrs, 0 mins, 3 secs, 508 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 545 ms
+INSERT 0 67969005
+Time: 0 hrs, 10 mins, 10 secs, 567 ms
+END
+Time: 0 hrs, 0 mins, 6 secs, 429 ms
+ALTER TABLE
+Time: 0 hrs, 0 mins, 4 secs, 819 ms
+
+Mon Jun 27 11:50:54 EDT 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 2 secs, 17 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+
+            250 - LOAD_BN_HITS_SP   
+
+TRUNCATE
+Time: 0 hrs, 0 mins, 2 secs, 600 ms
+INSERT 0 30523788
+Time: 0 hrs, 3 mins, 57 secs, 208 ms
+ANALYZE
+Time: 0 hrs, 1 mins, 31 secs, 654 ms
+END
+Time: 0 hrs, 0 mins, 28 secs, 102 ms
+
+Mon Jun 27 11:56:56 EDT 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 2 secs, 985 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 9 ms
+
+           300 - DYNAMIC FILTER
+
+TRUNCATE
+Time: 0 hrs, 0 mins, 6 secs, 184 ms
+INSERT 0 10994653
+Time: 0 hrs, 0 mins, 23 secs, 921 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 2 secs, 44 ms
+ Total records in web_click_cnt 
+--------------------------------
+                       10994653
+(1 row)
+
+Time: 0 hrs, 0 mins, 2 secs, 84 ms
+CREATE TABLE
+Time: 0 hrs, 2 mins, 4 secs, 455 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 99 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 2 secs, 114 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 249 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 796 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 1 secs, 846 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 83 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 1 secs, 643 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 6 secs, 432 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 120 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 2 secs, 962 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 81 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 85 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 0 secs, 959 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 101 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 1 secs, 68 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 442 ms
+    tablename     |    attr_name    | attr_value 
+------------------+-----------------+------------
+ BN_FILTER_SPIDER | CLK_USER_SD_MPL | 10
+ BN_FILTER_SPIDER | IP_USER_SD_MPL  | 1
+ BN_FILTER_SPIDER | IP_USER_RATIO   | .955
+ BN_FILTER_SPIDER | CLK_USER_MEAN   | 15.217
+ BN_FILTER_SPIDER | CLK_USER_SD     | 106.195
+ BN_FILTER_SPIDER | IP_USER_MEAN    | 12.876
+ BN_FILTER_SPIDER | IP_USER_SD      | 1494.976
+(7 rows)
+
+Time: 0 hrs, 0 mins, 0 secs, 361 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 5 secs, 952 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 1 secs, 155 ms
+ l_mean_sd_mpl 
+---------------
+      1077.167
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 440 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 991 ms
+INSERT 0 175
+Time: 0 hrs, 0 mins, 14 secs, 125 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 126 ms
+ Total click_user bn_spider_ip records 
+---------------------------------------
+                                   175
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 279 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 7 secs, 989 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 61 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 7 secs, 20 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 570 ms
+DROP 
+Time: 0 hrs, 0 mins, 0 secs, 181 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 1 secs, 113 ms
+ l_mean_sd_mpl | l_ratio 
+---------------+---------
+      1507.852 |   0.955
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 134 ms
+INSERT 0 8789686
+Time: 0 hrs, 1 mins, 25 secs, 995 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 78 ms
+ Total ip_user_filter bn_spider_ip records 
+-------------------------------------------
+                                   8789686
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 56 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 12 secs, 147 ms
+ERROR:  invalid input syntax for type numeric: "27616869548	2"
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+ABORT
+Time: 0 hrs, 0 mins, 0 secs, 60 ms
+
+Mon Jun 27 12:03:10 EDT 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 894 ms
+
+           600 - LOAD RESOURCES
+
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+CREATE TABLE
+Time: 0 hrs, 5 mins, 0 secs, 855 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 127 ms
+ tmp_a_count 
+-------------
+      457919
+(1 row)
+
+Time: 0 hrs, 0 mins, 3 secs, 707 ms
+UPDATE 0
+Time: 0 hrs, 0 mins, 7 secs, 206 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 466 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 2 secs, 501 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 15 secs, 225 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 20 ms
+ first_resource_id | last_resource_id 
+-------------------+------------------
+                   |                 
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 386 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 1 secs, 198 ms
+ total_resources 
+-----------------
+        20070620
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 408 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 564 ms
+END
+Time: 0 hrs, 0 mins, 8 secs, 217 ms
+VACUUM
+Time: 0 hrs, 0 mins, 46 secs, 859 ms
+
+Mon Jun 27 12:09:42 EDT 2011
+
+Timing is on.
+
+           650 - LOAD_BN_SESSION_STAGE
+
+BEGIN
+Time: 0 hrs, 0 mins, 2 secs, 146 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 11 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 71 ms
+CREATE TABLE
+Time: 0 hrs, 1 mins, 19 secs, 376 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 8 secs, 263 ms
+ tmp_sessionized_stage 
+-----------------------
+              17000692
+(1 row)
+
+Time: 0 hrs, 0 mins, 3 secs, 101 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 4 secs, 476 ms
+INSERT 0 1871783
+Time: 0 hrs, 1 mins, 2 secs, 58 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 3 secs, 409 ms
+CREATE TABLE
+Time: 0 hrs, 2 mins, 3 secs, 316 ms
+CREATE INDEX
+Time: 0 hrs, 0 mins, 1 secs, 814 ms
+ tmp_first_last 
+----------------
+        1871783
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 349 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 687 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 23 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 142 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 8 secs, 599 ms
+DROP
+Time: 0 hrs, 0 mins, 0 secs, 569 ms
+INSERT 0 1871783
+Time: 0 hrs, 0 mins, 47 secs, 996 ms
+ bn_session_stage 
+------------------
+          1871783
+(1 row)
+
+Time: 0 hrs, 0 mins, 5 secs, 361 ms
+CREATE INDEX
+Time: 0 hrs, 0 mins, 9 secs, 572 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 20 secs, 883 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 19 secs, 849 ms
+END
+Time: 0 hrs, 2 mins, 24 secs, 975 ms
+
+Mon Jun 27 12:18:51 EDT 2011
+
+BEGIN
+
+           660 - LOAD_BN_SESSION_UPDATE_STAGE
+
+SET
+TRUNCATE
+INSERT 0 0
+END
+
+Mon Jun 27 12:20:26 EDT 2011
+
+Timing is on.
+
+           670 - LOAD_BN_SESSION_20110625.UPDATES
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 491 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 11 ms
+UPDATE 0
+Time: 0 hrs, 0 mins, 0 secs, 705 ms
+END
+Time: 0 hrs, 0 mins, 17 secs, 556 ms
+VACUUM
+Time: 0 hrs, 0 mins, 35 secs, 529 ms
+
+Mon Jun 27 12:21:21 EDT 2011
+
+Timing is on.
+
+           700 - LOAD_BN_SESSION
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 371 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 14 ms
+INSERT 0 0
+Time: 0 hrs, 12 mins, 57 secs, 970 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 505 ms
+END
+Time: 0 hrs, 0 mins, 43 secs, 573 ms
+
+Mon Jun 27 12:35:06 EDT 2011
+
+Timing is on.
+
+            750 - LOAD_BN_SESSION_SUMMARY   
+
+BEGIN
+Time: 0 hrs, 0 mins, 2 secs, 291 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 16 ms
+CREATE TABLE
+Time: 0 hrs, 1 mins, 9 secs, 563 ms
+TRUNCATE
+Time: 0 hrs, 1 mins, 13 secs, 306 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 55 secs, 129 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 413 ms
+ count(1) 
+----------
+        0
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 529 ms
+END
+Time: 0 hrs, 0 mins, 10 secs, 277 ms
+
+Mon Jun 27 12:38:38 EDT 2011
+
+Timing is on.
+
+           800 - LOAD_BN_HITS
+
+BEGIN
+Time: 0 hrs, 0 mins, 3 secs, 54 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 9 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 76 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 127 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 71 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 3 secs, 934 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 7 secs, 815 ms
+ count(1) 
+----------
+        0
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 858 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 28 ms
+END
+Time: 0 hrs, 0 mins, 8 secs, 306 ms
+
+Mon Jun 27 12:39:03 EDT 2011
+
+Timing is on.
+
+            900 - LOAD_CLICKSTREAM   
+
+BEGIN
+Time: 0 hrs, 0 mins, 3 secs, 291 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 11 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 6 secs, 129 ms
+INSERT 0 0
+Time: 0 hrs, 2 mins, 42 secs, 116 ms
+ count(1) 
+----------
+        0
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 770 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 678 ms
+END
+Time: 0 hrs, 0 mins, 16 secs, 926 ms
+
+Mon Jun 27 12:42:14 EDT 2011
+
+Timing is on.
+
+            1000 - PAGE_VIEW_SUMMARY  
+
+BEGIN
+Time: 0 hrs, 0 mins, 2 secs, 991 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 12 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 83 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 3 secs, 303 ms
+INSERT 0 0
+Time: 0 hrs, 1 mins, 10 secs, 310 ms
+ count(1) 
+----------
+        0
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 102 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 57 ms
+END
+Time: 0 hrs, 0 mins, 15 secs, 220 ms
+
+Mon Jun 27 12:43:48 EDT 2011
+
+
+2000 - WRAP UP 
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 2 secs, 888 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 7 secs, 287 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 9 secs, 395 ms
+END
+Time: 0 hrs, 0 mins, 27 secs, 945 ms
+Mon Jun 27 12:44:36 EDT 2011
+Removing lock file and waiting for a minute
+Running time of run.sh 20110625: 65 minutes
+Checking for lock file /tmp/.iislock
+Acquired lock file /tmp/.iislock
+-------------------------------------
+Processing for 20110625
+-------------------------------------
+
+Tue Jun 28 22:42:45 EDT 2011
+
+Timing is on.
+
+           000 - INIT
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 843 ms
+*** Truncating staging tables before workflow starts ***
+SET
+Time: 0 hrs, 0 mins, 0 secs, 9 ms
+GRANT
+Time: 0 hrs, 0 mins, 2 secs, 458 ms
+END
+Time: 0 hrs, 0 mins, 6 secs, 110 ms
+
+Tue Jun 28 22:42:56 EDT 2011
+
+Timing is on.
+
+            200 - LOAD_BN_IISLOGS   
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 319 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 7 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 5 secs, 501 ms
+INSERT 0 67969005
+Time: 0 hrs, 15 mins, 18 secs, 916 ms
+END
+Time: 0 hrs, 0 mins, 18 secs, 296 ms
+ALTER TABLE
+Time: 0 hrs, 0 mins, 4 secs, 428 ms
+
+Tue Jun 28 22:58:44 EDT 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 133 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 11 ms
+
+            250 - LOAD_BN_HITS_SP   
+
+TRUNCATE
+Time: 0 hrs, 0 mins, 2 secs, 440 ms
+INSERT 0 30523788
+Time: 0 hrs, 4 mins, 6 secs, 681 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 5 secs, 523 ms
+END
+Time: 0 hrs, 0 mins, 21 secs, 552 ms
+
+Tue Jun 28 23:03:22 EDT 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 825 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 9 ms
+
+           300 - DYNAMIC FILTER
+
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 294 ms
+INSERT 0 10994653
+Time: 0 hrs, 0 mins, 26 secs, 50 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 2 secs, 28 ms
+ Total records in web_click_cnt 
+--------------------------------
+                       10994653
+(1 row)
+
+Time: 0 hrs, 0 mins, 2 secs, 446 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 5 secs, 233 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 162 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 2 secs, 351 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 138 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 1 secs, 251 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 4 secs, 528 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 109 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 0 secs, 364 ms
+CREATE TABLE
+Time: 0 hrs, 7 mins, 39 secs, 112 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 110 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 2 secs, 439 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 288 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 507 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 3 secs, 598 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 119 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 0 secs, 421 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 469 ms
+    tablename     |    attr_name    | attr_value 
+------------------+-----------------+------------
+ BN_FILTER_SPIDER | CLK_USER_SD_MPL | 10
+ BN_FILTER_SPIDER | IP_USER_SD_MPL  | 1
+ BN_FILTER_SPIDER | IP_USER_RATIO   | .955
+ BN_FILTER_SPIDER | CLK_USER_MEAN   | 15.217
+ BN_FILTER_SPIDER | CLK_USER_SD     | 106.195
+ BN_FILTER_SPIDER | IP_USER_MEAN    | 12.876
+ BN_FILTER_SPIDER | IP_USER_SD      | 1494.976
+(7 rows)
+
+Time: 0 hrs, 0 mins, 0 secs, 587 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 9 secs, 356 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 2 secs, 48 ms
+ l_mean_sd_mpl 
+---------------
+      1077.167
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 348 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 348 ms
+INSERT 0 175
+Time: 0 hrs, 0 mins, 9 secs, 379 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 969 ms
+ Total click_user bn_spider_ip records 
+---------------------------------------
+                                   175
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 644 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 4 secs, 312 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 94 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 3 secs, 419 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 98 ms
+DROP 
+Time: 0 hrs, 0 mins, 0 secs, 303 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 0 secs, 664 ms
+ l_mean_sd_mpl | l_ratio 
+---------------+---------
+      1507.852 |   0.955
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 913 ms
+INSERT 0 8789686
+Time: 0 hrs, 0 mins, 7 secs, 13 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 710 ms
+ Total ip_user_filter bn_spider_ip records 
+-------------------------------------------
+                                   8789686
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 907 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 977 ms
+ERROR:  invalid input syntax for type numeric: "29400129242.."
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+ABORT
+Time: 0 hrs, 0 mins, 0 secs, 22 ms
+
+Tue Jun 28 23:13:16 EDT 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 621 ms
+
+           600 - LOAD RESOURCES
+
+SET
+Time: 0 hrs, 0 mins, 0 secs, 11 ms
+CREATE TABLE
+Time: 0 hrs, 1 mins, 10 secs, 352 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 6 secs, 629 ms
+ tmp_a_count 
+-------------
+      527872
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 991 ms
+UPDATE 0
+Time: 0 hrs, 0 mins, 7 secs, 464 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 2 secs, 390 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 2 secs, 190 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 9 secs, 673 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 25 ms
+ first_resource_id | last_resource_id 
+-------------------+------------------
+                   |                 
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 163 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 1 secs, 532 ms
+ total_resources 
+-----------------
+        20315392
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 322 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 576 ms
+END
+Time: 0 hrs, 0 mins, 14 secs, 314 ms
+VACUUM
+Time: 0 hrs, 2 mins, 15 secs, 584 ms
+
+Tue Jun 28 23:17:32 EDT 2011
+
+Timing is on.
+
+           650 - LOAD_BN_SESSION_STAGE
+
+BEGIN
+Time: 0 hrs, 0 mins, 3 secs, 382 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 105 ms
+CREATE TABLE
+Time: 0 hrs, 2 mins, 19 secs, 352 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 20 secs, 952 ms
+ tmp_sessionized_stage 
+-----------------------
+              20814614
+(1 row)
+
+Time: 0 hrs, 0 mins, 6 secs, 585 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 2 secs, 682 ms
+INSERT 0 2200612
+Time: 0 hrs, 35 mins, 2 secs, 809 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 0 ms
+CREATE TABLE
+Time: 0 hrs, 8 mins, 19 secs, 775 ms
+CREATE INDEX
+Time: 0 hrs, 0 mins, 0 secs, 842 ms
+ tmp_first_last 
+----------------
+        2200612
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 138 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 882 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 21 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 17 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 567 ms
+DROP
+Time: 0 hrs, 0 mins, 0 secs, 137 ms
+INSERT 0 2200612
+Time: 0 hrs, 0 mins, 7 secs, 981 ms
+ bn_session_stage 
+------------------
+          2200612
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 509 ms
+CREATE INDEX
+Time: 0 hrs, 0 mins, 1 secs, 54 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 405 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 557 ms
+END
+Time: 0 hrs, 0 mins, 10 secs, 714 ms
+
+Wed Jun 29 00:04:15 EDT 2011
+
+BEGIN
+
+           660 - LOAD_BN_SESSION_UPDATE_STAGE
+
+SET
+TRUNCATE
+INSERT 0 0
+END
+
+Wed Jun 29 00:04:25 EDT 2011
+
+Timing is on.
+
+           670 - LOAD_BN_SESSION_20110625.UPDATES
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 313 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+UPDATE 0
+Time: 0 hrs, 0 mins, 0 secs, 414 ms
+END
+Time: 0 hrs, 0 mins, 1 secs, 814 ms
+VACUUM
+Time: 0 hrs, 1 mins, 4 secs, 256 ms
+
+Wed Jun 29 00:05:33 EDT 2011
+
+Timing is on.
+
+           700 - LOAD_BN_SESSION
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 823 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 13 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 3 secs, 787 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 87 ms
+END
+Time: 0 hrs, 0 mins, 0 secs, 940 ms
+
+Wed Jun 29 00:05:39 EDT 2011
+
+Timing is on.
+
+            750 - LOAD_BN_SESSION_SUMMARY   
+
+BEGIN
+Time: 0 hrs, 0 mins, 2 secs, 583 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 4 secs, 724 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 354 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 1 secs, 89 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 22 ms
+ count(1) 
+----------
+        0
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 83 ms
+END
+Time: 0 hrs, 0 mins, 6 secs, 626 ms
+
+Wed Jun 29 00:05:55 EDT 2011
+
+Timing is on.
+
+           800 - LOAD_BN_HITS
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 832 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 20 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 17 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 17 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 17 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 705 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 1 secs, 389 ms
+ count(1) 
+----------
+        0
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 264 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 31 ms
+END
+Time: 0 hrs, 0 mins, 1 secs, 108 ms
+
+Wed Jun 29 00:06:00 EDT 2011
+
+Timing is on.
+
+            900 - LOAD_CLICKSTREAM   
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 842 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 726 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 6 secs, 635 ms
+ count(1) 
+----------
+        0
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 92 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 35 ms
+END
+Time: 0 hrs, 0 mins, 1 secs, 408 ms
+
+Wed Jun 29 00:06:10 EDT 2011
+
+Timing is on.
+
+            1000 - PAGE_VIEW_SUMMARY  
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 940 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 14 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 28 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 386 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 1 secs, 311 ms
+ count(1) 
+----------
+        0
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 126 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 45 ms
+END
+Time: 0 hrs, 0 mins, 0 secs, 793 ms
+
+Wed Jun 29 00:06:14 EDT 2011
+
+
+2000 - WRAP UP 
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 869 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 286 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 227 ms
+END
+Time: 0 hrs, 0 mins, 1 secs, 208 ms
+Wed Jun 29 00:06:17 EDT 2011
+Removing lock file and waiting for a minute
+Checking for lock file /tmp/.iislock
+Acquired lock file /tmp/.iislock
+-------------------------------------
+Processing for 20110625
+-------------------------------------
+
+Fri Jul 1 23:07:33 EDT 2011
+
+Timing is on.
+
+           000 - INIT
+
+BEGIN
+Time: 0 hrs, 0 mins, 3 secs, 803 ms
+*** Truncating staging tables before workflow starts ***
+SET
+Time: 0 hrs, 0 mins, 0 secs, 8 ms
+GRANT
+Time: 0 hrs, 0 mins, 3 secs, 987 ms
+END
+Time: 0 hrs, 0 mins, 10 secs, 200 ms
+
+Fri Jul 1 23:07:51 EDT 2011
+
+Timing is on.
+
+            200 - LOAD_BN_IISLOGS   
+
+BEGIN
+Time: 0 hrs, 0 mins, 4 secs, 320 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 5 secs, 201 ms
+Query marked for cancellation (cancellation is not guaranteed - please consult the Aster nCluster Management Console for status)
+connection to server was lost
+
+Fri Jul 1 23:16:10 EDT 2011
+
+Timing is on.
+Checking for lock file /tmp/.iislock
+Acquired lock file /tmp/.iislock
+-------------------------------------
+Processing for 20110625
+-------------------------------------
+
+Sat Jul 2 01:15:51 EDT 2011
+
+Timing is on.
+
+           000 - INIT
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 108 ms
+*** Truncating staging tables before workflow starts ***
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+GRANT
+Time: 0 hrs, 0 mins, 5 secs, 33 ms
+END
+Time: 0 hrs, 0 mins, 0 secs, 775 ms
+
+Sat Jul 2 01:15:59 EDT 2011
+
+Timing is on.
+
+            200 - LOAD_BN_IISLOGS   
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 815 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 14 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 375 ms
+INSERT 0 67969005
+Time: 0 hrs, 12 mins, 53 secs, 796 ms
+END
+Time: 0 hrs, 0 mins, 12 secs, 742 ms
+Checking for lock file /tmp/.iislock
+Acquired lock file /tmp/.iislock
+-------------------------------------
+Processing for 20110625
+-------------------------------------
+
+Mon Jul 18 18:58:07 EDT 2011
+
+Timing is on.
+
+           000 - INIT
+
+BEGIN
+Time: 0 hrs, 0 mins, 6 secs, 155 ms
+*** Truncating staging tables before workflow starts ***
+SET
+Time: 0 hrs, 0 mins, 0 secs, 12 ms
+GRANT
+Time: 0 hrs, 0 mins, 12 secs, 159 ms
+END
+Time: 0 hrs, 0 mins, 33 secs, 327 ms
+
+Mon Jul 18 18:58:59 EDT 2011
+
+Timing is on.
+
+            200 - LOAD_BN_IISLOGS   
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 683 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 11 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 4 secs, 629 ms
+INSERT 0 67968999
+Time: 0 hrs, 12 mins, 6 secs, 824 ms
+END
+Time: 0 hrs, 1 mins, 21 secs, 867 ms
+ALTER TABLE
+Time: 0 hrs, 0 mins, 7 secs, 162 ms
+
+Mon Jul 18 19:12:41 EDT 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 2 secs, 230 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 13 ms
+
+            250 - LOAD_BN_HITS_SP   
+
+TRUNCATE
+Time: 0 hrs, 0 mins, 2 secs, 780 ms
+INSERT 0 30523786
+Time: 0 hrs, 3 mins, 41 secs, 494 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 4 secs, 265 ms
+END
+Time: 0 hrs, 0 mins, 18 secs, 479 ms
+
+Mon Jul 18 19:16:51 EDT 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 829 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+
+           300 - DYNAMIC FILTER
+
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 721 ms
+INSERT 0 10994649
+Time: 0 hrs, 0 mins, 9 secs, 358 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 545 ms
+ Total records in web_click_cnt 
+--------------------------------
+                       10994649
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 789 ms
+CREATE TABLE
+Time: 0 hrs, 1 mins, 58 secs, 853 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 128 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 0 secs, 739 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 76 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 158 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 0 secs, 191 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 78 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 0 secs, 213 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 1 secs, 408 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 114 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 0 secs, 555 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 76 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 96 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 0 secs, 258 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 91 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 0 secs, 616 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 166 ms
+    tablename     |    attr_name    | attr_value 
+------------------+-----------------+------------
+ BN_FILTER_SPIDER | CLK_USER_SD_MPL | 10
+ BN_FILTER_SPIDER | IP_USER_SD_MPL  | 1
+ BN_FILTER_SPIDER | IP_USER_RATIO   | .955
+ BN_FILTER_SPIDER | CLK_USER_MEAN   | 15.217
+ BN_FILTER_SPIDER | CLK_USER_SD     | 106.195
+ BN_FILTER_SPIDER | IP_USER_MEAN    | 12.876
+ BN_FILTER_SPIDER | IP_USER_SD      | 1494.976
+(7 rows)
+
+Time: 0 hrs, 0 mins, 0 secs, 162 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 4 secs, 394 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 1 secs, 918 ms
+ l_mean_sd_mpl 
+---------------
+      1077.167
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 294 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 702 ms
+INSERT 0 175
+Time: 0 hrs, 0 mins, 6 secs, 739 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 54 ms
+ Total click_user bn_spider_ip records 
+---------------------------------------
+                                   175
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 113 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 1 secs, 409 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 74 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 2 secs, 114 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 121 ms
+DROP 
+Time: 0 hrs, 0 mins, 0 secs, 196 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 0 secs, 319 ms
+ l_mean_sd_mpl | l_ratio 
+---------------+---------
+      1507.852 |   0.955
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 276 ms
+INSERT 0 8789686
+Time: 0 hrs, 0 mins, 6 secs, 219 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 302 ms
+ Total ip_user_filter bn_spider_ip records 
+-------------------------------------------
+                                   8789686
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 399 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 39 ms
+INSERT 0 18890106
+Time: 0 hrs, 0 mins, 27 secs, 836 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 4 secs, 282 ms
+ bn_hits_stage 
+---------------
+      18890106
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 570 ms
+INSERT 0 9493579
+Time: 0 hrs, 0 mins, 41 secs, 578 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 6 secs, 952 ms
+ bn_hits_sp_20110625 
+---------------------
+            40017365
+(1 row)
+
+Time: 0 hrs, 0 mins, 10 secs, 102 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 283 ms
+INSERT 0 9061528
+Time: 0 hrs, 0 mins, 11 secs, 188 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 2 secs, 994 ms
+ bn_hits_client_20110625 
+-------------------------
+                 9061528
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 13 ms
+END
+Time: 0 hrs, 0 mins, 18 secs, 792 ms
+
+Mon Jul 18 19:21:42 EDT 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 135 ms
+
+           600 - LOAD RESOURCES
+
+SET
+Time: 0 hrs, 0 mins, 0 secs, 13 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 21 secs, 364 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 2 ms
+ tmp_a_count 
+-------------
+      466058
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 204 ms
+UPDATE 0
+Time: 0 hrs, 0 mins, 4 secs, 144 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 850 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 378 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 11 secs, 800 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 20 ms
+ first_resource_id | last_resource_id 
+-------------------+------------------
+                   |                 
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 413 ms
+INSERT 0 0
+Time: 0 hrs, 0 mins, 0 secs, 272 ms
+ total_resources 
+-----------------
+        25268666
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 249 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 835 ms
+END
+Time: 0 hrs, 0 mins, 20 secs, 196 ms
+VACUUM
+Time: 0 hrs, 1 mins, 9 secs, 416 ms
+
+Mon Jul 18 19:23:54 EDT 2011
+
+Timing is on.
+
+           650 - LOAD_BN_SESSION_STAGE
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 92 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 22 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 40 secs, 771 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 3 secs, 751 ms
+ tmp_sessionized_stage 
+-----------------------
+              18890106
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 489 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 468 ms
+INSERT 0 1862105
+Time: 0 hrs, 0 mins, 21 secs, 809 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 994 ms
+CREATE TABLE
+Time: 0 hrs, 1 mins, 17 secs, 476 ms
+CREATE INDEX
+Time: 0 hrs, 0 mins, 0 secs, 410 ms
+ tmp_first_last 
+----------------
+        1862105
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 112 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 825 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 19 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 29 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 487 ms
+DROP
+Time: 0 hrs, 0 mins, 0 secs, 54 ms
+INSERT 0 1862105
+Time: 0 hrs, 0 mins, 7 secs, 308 ms
+ bn_session_stage 
+------------------
+          1862105
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 403 ms
+CREATE INDEX
+Time: 0 hrs, 0 mins, 0 secs, 379 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 19 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 415 ms
+END
+Time: 0 hrs, 0 mins, 3 secs, 754 ms
+
+Mon Jul 18 19:26:36 EDT 2011
+
+BEGIN
+
+           660 - LOAD_BN_SESSION_UPDATE_STAGE
+
+SET
+TRUNCATE
+INSERT 0 0
+END
+
+Mon Jul 18 19:26:40 EDT 2011
+
+Timing is on.
+
+           670 - LOAD_BN_SESSION_20110625.UPDATES
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 840 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+UPDATE 0
+Time: 0 hrs, 0 mins, 0 secs, 667 ms
+END
+Time: 0 hrs, 0 mins, 1 secs, 450 ms
+VACUUM
+Time: 0 hrs, 0 mins, 7 secs, 806 ms
+
+Mon Jul 18 19:26:51 EDT 2011
+
+Timing is on.
+
+           700 - LOAD_BN_SESSION
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 820 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+INSERT 0 1862105
+Time: 0 hrs, 0 mins, 7 secs, 864 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 930 ms
+END
+Time: 0 hrs, 0 mins, 4 secs, 361 ms
+
+Mon Jul 18 19:27:06 EDT 2011
+
+Timing is on.
+
+            750 - LOAD_BN_SESSION_SUMMARY   
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 917 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 9 secs, 398 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 255 ms
+INSERT 0 307338
+Time: 0 hrs, 0 mins, 5 secs, 678 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 205 ms
+ count(1) 
+----------
+   307338
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 403 ms
+END
+Time: 0 hrs, 0 mins, 5 secs, 364 ms
+
+Mon Jul 18 19:27:30 EDT 2011
+
+Timing is on.
+
+           800 - LOAD_BN_HITS
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 980 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 12 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 21 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 30 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 24 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 2 secs, 333 ms
+INSERT 0 18890106
+Time: 0 hrs, 0 mins, 6 secs, 37 ms
+ count(1) 
+----------
+ 18890106
+(1 row)
+
+Time: 0 hrs, 0 mins, 2 secs, 74 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 3 secs, 550 ms
+END
+Time: 0 hrs, 0 mins, 21 secs, 314 ms
+
+Mon Jul 18 19:28:07 EDT 2011
+
+Timing is on.
+
+            900 - LOAD_CLICKSTREAM   
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 69 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 12 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 943 ms
+INSERT 0 18890106
+Time: 0 hrs, 2 mins, 33 secs, 525 ms
+ count(1) 
+----------
+ 18890106
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 418 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 302 ms
+END
+Time: 0 hrs, 0 mins, 4 secs, 192 ms
+
+Mon Jul 18 19:30:49 EDT 2011
+
+Timing is on.
+
+            1000 - PAGE_VIEW_SUMMARY  
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 942 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 10 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 18 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 888 ms
+INSERT 0 486304
+Time: 0 hrs, 0 mins, 4 secs, 145 ms
+ count(1) 
+----------
+   486304
+(1 row)
+
+Time: 0 hrs, 0 mins, 0 secs, 344 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 475 ms
+END
+Time: 0 hrs, 0 mins, 1 secs, 898 ms
+
+Mon Jul 18 19:30:58 EDT 2011
+
+
+2000 - WRAP UP 
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 829 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 686 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 150 ms
+END
+Time: 0 hrs, 0 mins, 0 secs, 916 ms
+Mon Jul 18 19:31:01 EDT 2011
+Removing lock file and waiting for a minute
+Total time taken:  33  minutes.

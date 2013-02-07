@@ -1,0 +1,145 @@
+Checking for lock file /tmp/.iislock
+Acquired lock file /tmp/.iislock
+deleting simple.htm records - these are just server testing...
+DELETE 6107383
+-------------------------------------
+Processing for 20110817
+-------------------------------------
+
+Thu Aug 18 13:43:27 EDT 2011
+
+Timing is on.
+
+           000 - INIT
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 558 ms
+*** Truncating staging tables before workflow starts ***
+SET
+Time: 0 hrs, 0 mins, 0 secs, 26 ms
+GRANT
+Time: 0 hrs, 0 mins, 43 secs, 400 ms
+END
+Time: 0 hrs, 0 mins, 9 secs, 120 ms
+
+Thu Aug 18 13:44:22 EDT 2011
+
+Timing is on.
+
+            200 - LOAD_BN_IISLOGS   
+
+BEGIN
+Time: 0 hrs, 0 mins, 13 secs, 290 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 23 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 13 secs, 130 ms
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+connection to server was lost
+
+Thu Aug 18 15:08:37 EDT 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 11 secs, 588 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 283 ms
+
+            250 - LOAD_BN_HITS_SP   
+
+TRUNCATE
+Time: 0 hrs, 0 mins, 5 secs, 280 ms
+ERROR:  new row for relation "bn_hits_sp_20110817" violates check constraint "bn_hits_sp_20110817_daily"
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+ABORT
+Time: 0 hrs, 0 mins, 0 secs, 695 ms
+
+Thu Aug 18 15:09:04 EDT 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 10 secs, 995 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 236 ms
+
+           300 - DYNAMIC FILTER
+
+TRUNCATE
+Time: 0 hrs, 0 mins, 1 secs, 379 ms
+INSERT 0 22333350
+Time: 0 hrs, 0 mins, 27 secs, 187 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 678 ms
+ Total records in web_click_cnt 
+--------------------------------
+                       22333350
+(1 row)
+
+Time: 0 hrs, 0 mins, 3 secs, 346 ms
+CREATE TABLE
+Time: 0 hrs, 18 mins, 19 secs, 329 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 1 secs, 346 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 3 secs, 301 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 375 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 1 secs, 460 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 3 secs, 784 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 525 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 4 secs, 831 ms
+CREATE TABLE
+Time: 0 hrs, 1 mins, 5 secs, 143 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 2 secs, 247 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 11 secs, 438 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 908 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 976 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 7 secs, 252 ms
+DELETE 1
+Time: 0 hrs, 0 mins, 0 secs, 706 ms
+INSERT 0 1
+Time: 0 hrs, 0 mins, 8 secs, 664 ms
+ANALYZE
+Time: 0 hrs, 0 mins, 0 secs, 741 ms
+    tablename     |    attr_name    | attr_value 
+------------------+-----------------+------------
+ BN_FILTER_SPIDER | CLK_USER_SD_MPL | 10
+ BN_FILTER_SPIDER | IP_USER_SD_MPL  | 1
+ BN_FILTER_SPIDER | IP_USER_RATIO   | .955
+ BN_FILTER_SPIDER | CLK_USER_MEAN   | 15.290
+ BN_FILTER_SPIDER | CLK_USER_SD     | 144.985
+ BN_FILTER_SPIDER | IP_USER_MEAN    | 17.330
+ BN_FILTER_SPIDER | IP_USER_SD      | 1677.426
+(7 rows)
+
+Time: 0 hrs, 0 mins, 2 secs, 323 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 25 secs, 915 ms
+CREATE TABLE
+Time: 0 hrs, 0 mins, 3 secs, 426 ms
+ l_mean_sd_mpl 
+---------------
+      1465.140
+(1 row)
+
+Time: 0 hrs, 0 mins, 1 secs, 949 ms
+TRUNCATE
+Time: 0 hrs, 0 mins, 7 secs, 149 ms
+Query marked for cancellation (cancellation is not guaranteed - please consult the Aster nCluster Management Console for status)
+connection to server was lost
+
+Thu Aug 18 15:31:24 EDT 2011
+
+Timing is on.
+Checking for lock file /tmp/.iislock

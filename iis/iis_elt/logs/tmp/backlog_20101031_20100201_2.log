@@ -1,0 +1,73 @@
+nohup: ignoring input
+Checking for lock file /tmp/.iislock
+Acquired lock file /tmp/.iislock
+-------------------------------------
+Processing for 20101019
+-------------------------------------
+Sat Jan 29 19:22:34 EST 2011
+
+Timing is on.
+
+           000 - INIT
+
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 671 ms
+*** Truncating staging tables before workflow starts ***
+SET
+Time: 0 hrs, 0 mins, 0 secs, 14 ms
+GRANT
+Time: 0 hrs, 0 mins, 3 secs, 278 ms
+END
+Time: 0 hrs, 0 mins, 1 secs, 820 ms
+
+Sat Jan 29 19:22:40 EST 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 695 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 12 ms
+
+           300 - DYNAMIC FILTER STUB - WEB_RESOURCE_HITS
+
+TRUNCATE
+Time: 0 hrs, 0 mins, 0 secs, 342 ms
+INSERT 0 24740906
+Time: 0 hrs, 1 mins, 10 secs, 596 ms
+ERROR:  syntax error at or near "NULL"
+LINE 132:   NULL AS SESSION_TRACK_ID,
+            ^
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+NOTICE:  current transaction is aborted, queries ignored until end of transaction block
+ABORT
+Time: 0 hrs, 0 mins, 0 secs, 50 ms
+
+Sat Jan 29 19:23:52 EST 2011
+
+Timing is on.
+BEGIN
+Time: 0 hrs, 0 mins, 0 secs, 739 ms
+
+           600 - LOAD RESOURCES
+
+SET
+Time: 0 hrs, 0 mins, 0 secs, 11 ms
+Query marked for cancellation (cancellation is not guaranteed - please consult the Aster nCluster Management Console for status)
+connection to server was lost
+
+Sat Jan 29 19:23:58 EST 2011
+
+Timing is on.
+
+           650 - LOAD_BN_SESSION_STAGE
+
+Query marked for cancellation (cancellation is not guaranteed - please consult the Aster nCluster Management Console for status)
+connection to server was lost
+
+Sat Jan 29 19:23:58 EST 2011
+
+Query marked for cancellation (cancellation is not guaranteed - please consult the Aster nCluster Management Console for status)
+connection to server was lost
+
+Sat Jan 29 19:23:59 EST 2011
+

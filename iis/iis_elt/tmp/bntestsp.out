@@ -1,0 +1,436 @@
+begin;
+BEGIN
+set work_mem='2048000';
+SET
+select  btob_ind, count(*)	
+from    iis.bn_hits_sp  a11	
+where   a11.hit_timestamp >=  '2011-01-05'::DATE	
+ and a11.hit_timestamp < '2011-01-06'::DATE	
+group by 	btob_ind
+;
+ btob_ind | count(1) 
+----------+----------
+       11 |     1071
+        1 |  8983492
+          | 19318068
+(3 rows)
+
+select  purchase_ind, count(*)	
+from    iis.bn_hits_sp  a11	
+where   a11.hit_timestamp >=  '2011-01-05'::DATE	
+ and a11.hit_timestamp < '2011-01-06'::DATE	
+group by 	purchase_ind
+;
+ purchase_ind | count(1) 
+--------------+----------
+            0 |  8984563
+              | 19318068
+(2 rows)
+
+select  btob_ind,  COUNT(DISTINCT ORDER_NUMBER)		
+from    iis.bn_hits_sp  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+group by 	btob_ind	
+order by btob_ind		
+;
+ btob_ind | count( distinct order_number) 
+----------+-------------------------------
+        1 |                             0
+       11 |                             0
+          |                           476
+(3 rows)
+
+select  SHOPPER_IND, COUNT(*)	
+from    iis.bn_hits_sp  a11	
+where   a11.hit_timestamp >=  '2011-01-05'::DATE	
+ and a11.hit_timestamp < '2011-01-06'::DATE	
+group by 	SHOPPER_IND
+order by SHOPPER_IND	
+;
+ shopper_ind | count(1) 
+-------------+----------
+           0 |  8981551
+           1 |     3012
+             | 19318068
+(3 rows)
+
+select  MOBILE_TYPE, COUNT(*)	
+from    iis.bn_hits_sp  a11	
+where   a11.hit_timestamp >=  '2011-01-05'::DATE	
+ and a11.hit_timestamp < '2011-01-06'::DATE	
+group by 	MOBILE_TYPE
+order by MOBILE_TYPE	
+;
+ mobile_type  | count(1) 
+--------------+----------
+              | 27538930
+ 0            |        1
+ android      |    93911
+ bbwebkit     |      159
+ blackberry   |      120
+ iemobile     |        2
+ iphone       |   665614
+ lg           |       41
+ mot          |        1
+ nokia        |     3416
+ opera        |       15
+ samsung      |      156
+ sonyericsson |        1
+ sprint       |        1
+ t            |      259
+ webos        |        3
+ windows      |        1
+(17 rows)
+
+select  VCMOD, COUNT(*)	
+from    iis.bn_hits_sp  a11	
+where   a11.hit_timestamp >=  '2011-01-05'::DATE	
+ and a11.hit_timestamp < '2011-01-06'::DATE	
+group by VCMOD	
+order by VCMOD	
+;
+ vcmod | count(1) 
+-------+----------
+     1 |     4766
+     7 |        4
+       | 28297861
+(3 rows)
+
+select  SEARCH_ENGINE_PV, COUNT(*)	
+from    iis.bn_hits_sp  a11	
+where   a11.hit_timestamp >=  '2011-01-05'::DATE	
+ and a11.hit_timestamp < '2011-01-06'::DATE	
+group by SEARCH_ENGINE_PV	
+order by SEARCH_ENGINE_PV	
+;
+ search_engine_pv | count(1) 
+------------------+----------
+                1 |      190
+                2 |        2
+                8 |       48
+                  | 28302391
+(4 rows)
+
+select  BTOB_IND, COUNT(EAN)	
+from    iis.bn_hits_sp  a11	
+where   a11.hit_timestamp >=  '2011-01-05'::DATE	
+ and a11.hit_timestamp < '2011-01-06'::DATE	
+and ean <> '-9'	
+group by BTOB_IND	
+order by BTOB_IND	
+;
+ btob_ind | count(ean) 
+----------+------------
+        1 |     280529
+       11 |         96
+          |    1232754
+(3 rows)
+
+select  BTOB_IND, sum(vcqty)	
+from    iis.bn_hits_sp  a11	
+where   a11.hit_timestamp >=  '2011-01-05'::DATE	
+ and a11.hit_timestamp < '2011-01-06'::DATE	
+group by BTOB_IND	
+order by BTOB_IND	
+;
+ btob_ind |       sum(vcqty)        
+----------+-------------------------
+        1 |           4143094614107
+       11 |                        
+          | 44399133948919897986833
+(3 rows)
+
+select  BTOB_IND, COUNT(DISTINCT SOURCE_ID)		
+from    iis.bn_hits_sp  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+group by BTOB_IND		
+order by BTOB_IND		
+;
+ btob_ind | count( distinct source_id) 
+----------+----------------------------
+        1 |                         81
+       11 |                          1
+          |                       1750
+(3 rows)
+
+select     BTOB_IND, COUNT(DISTINCT SESSION_ID)		
+from    iis.bn_hits_sp  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+group by BTOB_IND		
+order by BTOB_IND		
+;
+ btob_ind | count( distinct session_id) 
+----------+-----------------------------
+        1 |                           0
+       11 |                           0
+          |                           0
+(3 rows)
+
+select     BTOB_IND, SUM(CART_AMT)		
+from    iis.bn_hits_sp  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+group by BTOB_IND		
+order by BTOB_IND		
+;
+ btob_ind | sum(cart_amt) 
+----------+---------------
+        1 |              
+       11 |              
+          |      11645.56
+(3 rows)
+
+select     BTOB_IND, COUNT(DISTINCT CUSTOMER_ID)		
+from    iis.bn_hits_sp  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+group by BTOB_IND		
+order by BTOB_IND		
+;
+ btob_ind | count( distinct customer_id) 
+----------+------------------------------
+        1 |                           11
+       11 |                            1
+          |                         5231
+(3 rows)
+
+select     COUNT(DISTINCT SEARCHTERM)		
+from    iis.bn_hits_sp  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+;
+ count( distinct searchterm) 
+-----------------------------
+                        3148
+(1 row)
+
+select     SEARCHOPTION, COUNT(*)		
+from    iis.bn_hits_sp  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+group by SEARCHOPTION		
+order by SEARCHOPTION		
+;
+ searchoption | count(1) 
+--------------+----------
+              | 28297730
+ allproducts  |     2744
+ bargain      |       18
+ book         |      862
+ calendars    |       13
+ ebooks       |      482
+ ho           |      102
+ isbn         |       34
+ kids         |       30
+ mags         |       23
+ music        |      131
+ oop          |       21
+ rare         |        5
+ textbook     |      163
+ toys         |       84
+ video        |      182
+ videogames   |        7
+(17 rows)
+
+select VISIBLE_PAGE_IND,count(*)
+from    iis.bn_hits_sp  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+group by VISIBLE_PAGE_IND		
+order by VISIBLE_PAGE_IND		
+;
+ visible_page_ind | count(1) 
+------------------+----------
+                0 |  2667153
+                1 |  6317410
+                  | 19318068
+(3 rows)
+
+select   COUNT(DISTINCT stageid)  		
+from    iis.bn_hits_sp  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+;
+ count( distinct stageid) 
+--------------------------
+                       76
+(1 row)
+
+	select   BTOB_IND, count(distinct ITM)		
+	from    iis.bn_hits_sp  a11		
+	where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+	 and a11.hit_timestamp < '2011-01-06'::DATE		
+	group by BTOB_IND		
+	order by BTOB_IND		
+;
+ btob_ind | count( distinct itm) 
+----------+----------------------
+        1 |                   74
+       11 |                    1
+          |                  456
+(3 rows)
+
+	select   BTOB_IND, count(distinct REFERRER)		
+	from    iis.bn_hits_sp  a11		
+	where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+	 and a11.hit_timestamp < '2011-01-06'::DATE		
+	group by BTOB_IND		
+	order by BTOB_IND		
+;
+ btob_ind | count( distinct referrer) 
+----------+---------------------------
+        1 |                     44330
+       11 |                         1
+          |                     17218
+(3 rows)
+
+-- excluding op stuff
+select   ORDER_PATH_NAME, count(*)		
+from    iis.bn_hits_sp  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+group by ORDER_PATH_NAME		
+order by ORDER_PATH_NAME		
+;
+    order_path_name     | count(1) 
+------------------------+----------
+                        | 28275182
+ C_CONSCSR_account      |       52
+ C_CONSCSR_cart         |     2777
+ C_CONSCSR_services     |      146
+ C_CONSINSTANT_account  |       32
+ C_CONSINSTANT_cart     |      572
+ C_CONSINSTANT_services |       55
+ C_CONS_account         |      959
+ C_CONS_cart            |    11847
+ C_CONS_mobilecart      |        6
+ C_CONS_services        |    11003
+(11 rows)
+
+select   OP_DFLT_SHIP_MTD, count(*)	
+from    iis.bn_hits_sp  a11	
+where   a11.hit_timestamp >=  '2011-01-05'::DATE	
+ and a11.hit_timestamp < '2011-01-06'::DATE	
+group by OP_DFLT_SHIP_MTD	
+order by OP_DFLT_SHIP_MTD	
+;
+ op_dflt_ship_mtd | count(1) 
+------------------+----------
+                  | 28302631
+(1 row)
+
+select   OP_RESET_SHIP_MTD, count(*)		
+from    iis.bn_hits_sp  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+group by OP_RESET_SHIP_MTD		
+order by OP_RESET_SHIP_MTD		
+;
+ op_reset_ship_mtd | count(1) 
+-------------------+----------
+                   | 28302631
+(1 row)
+
+select   OP_SHIP_OPTHTC, count(*)		
+from    iis.bn_hits_sp  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+group by OP_SHIP_OPTHTC		
+order by OP_SHIP_OPTHTC		
+;
+ op_ship_opthtc | count(1) 
+----------------+----------
+                | 28300849
+ false          |        7
+ true           |     1775
+(3 rows)
+
+select   OP_USERACTION, count(*)		
+from    iis.bn_hits_sp  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+group by OP_USERACTION		
+order by OP_USERACTION		
+;
+ op_useraction | count(1) 
+---------------+----------
+               | 28300297
+ hideCart      |     1967
+ viewCart      |      367
+(3 rows)
+
+select    OP_GC_IND,  		
+count(distinct OP_BUTTON_NAME),		
+count(distinct OP_COUPON_CD),		
+sum(OP_CART_TOT_AMT),		
+sum(OP_CART_QTY)		
+from    iis.bn_hits_CLIENT  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+group by OP_GC_IND		
+order by OP_GC_IND		
+;
+ op_gc_ind | count( distinct op_button_name) | count( distinct op_coupon_cd) | sum(op_cart_tot_amt) | sum(op_cart_qty) 
+-----------+---------------------------------+-------------------------------+----------------------+------------------
+         0 |                               1 |                             1 |           4824182.03 |           188161
+(1 row)
+
+select OP_SHIPOPT_BP_IND,		
+count(distinct OP_BUTTON_NAME),		
+count(distinct OP_COUPON_CD),		
+sum(OP_CART_TOT_AMT),		
+sum(OP_CART_QTY)		
+from    iis.bn_hits_CLIENT  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+group by OP_SHIPOPT_BP_IND		
+order by OP_SHIPOPT_BP_IND		
+;
+ op_shipopt_bp_ind | count( distinct op_button_name) | count( distinct op_coupon_cd) | sum(op_cart_tot_amt) | sum(op_cart_qty) 
+-------------------+---------------------------------+-------------------------------+----------------------+------------------
+                 0 |                               1 |                             1 |           4824182.03 |           188161
+(1 row)
+
+select  OP_SIGNIN_IND,		
+count(distinct OP_BUTTON_NAME),		
+count(distinct OP_COUPON_CD),		
+sum(OP_CART_TOT_AMT),		
+sum(OP_CART_QTY)		
+from    iis.bn_hits_CLIENT  a11		
+where   a11.hit_timestamp >=  '2011-01-05'::DATE		
+ and a11.hit_timestamp < '2011-01-06'::DATE		
+group by OP_SIGNIN_IND		
+order by OP_SIGNIN_IND		
+;
+ op_signin_ind | count( distinct op_button_name) | count( distinct op_coupon_cd) | sum(op_cart_tot_amt) | sum(op_cart_qty) 
+---------------+---------------------------------+-------------------------------+----------------------+------------------
+               |                               1 |                             1 |            142189.88 |             3742
+ T             |                               1 |                             1 |           4681992.15 |           184419
+(2 rows)
+
+select  count(distinct CM_PAGE),			
+count(distinct CM_UIACTION),			
+count(distinct CM_PAGETYPE),			
+count(distinct CM_PRODUCTCODE)			
+from    iis.bn_hits_CLIENT  a11			
+where   a11.hit_timestamp >=  '2011-01-05'::DATE			
+ and a11.hit_timestamp < '2011-01-06'::DATE			
+;
+ count( distinct cm_page) | count( distinct cm_uiaction) | count( distinct cm_pagetype) | count( distinct cm_productcode) 
+--------------------------+------------------------------+------------------------------+---------------------------------
+                        6 |                            1 |                            2 |                               2
+(1 row)
+
+select  host_name, cs_host, count(*)			
+from    iis.bn_hits  a11			
+where   a11.hit_timestamp >=  '2011-01-05'::DATE			
+ and a11.hit_timestamp < '2011-01-06'::DATE			
+group by host_name, cs_host			
+order by host_name, cs_host			
+			
+;
+Query marked for cancellation (cancellation is not guaranteed - please consult the Aster nCluster Management Console for status)
+connection to server was lost

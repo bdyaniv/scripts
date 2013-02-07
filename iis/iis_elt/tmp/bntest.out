@@ -1,0 +1,267 @@
+BEGIN
+SET
+ btob_ind | count(1) 
+----------+----------
+        1 |  7578014
+(1 row)
+
+ purchase_ind | count(1) 
+--------------+----------
+            0 |  7513735
+            1 |    64279
+(2 rows)
+
+ btob_ind | count( distinct order_number) 
+----------+-------------------------------
+        1 |                         64279
+(1 row)
+
+ shopper_ind | count(1) 
+-------------+----------
+           0 |  7578014
+(1 row)
+
+ mobile_type | count(1) 
+-------------+----------
+             |  7444730
+ android     |    37921
+ iphone      |    95325
+ lg          |       20
+ samsung     |        1
+ webos       |       17
+(6 rows)
+
+ vcmod | count(1) 
+-------+----------
+       |  7578014
+(1 row)
+
+ search_engine_pv | count(1) 
+------------------+----------
+                  |  7578014
+(1 row)
+
+ btob_ind | count(ean) 
+----------+------------
+        1 |     469549
+(1 row)
+
+ btob_ind | sum(vcqty) 
+----------+------------
+        1 |           
+(1 row)
+
+ btob_ind | count( distinct source_id) 
+----------+----------------------------
+        1 |                         45
+(1 row)
+
+ btob_ind | count( distinct session_id) 
+----------+-----------------------------
+        1 |                           0
+(1 row)
+
+ btob_ind | sum(cart_amt) 
+----------+---------------
+        1 |     308475.06
+(1 row)
+
+ btob_ind | count( distinct customer_id) 
+----------+------------------------------
+        1 |                       469582
+(1 row)
+
+ count( distinct searchterm) 
+-----------------------------
+                           1
+(1 row)
+
+ searchoption | count(1) 
+--------------+----------
+              |  7578014
+(1 row)
+
+ visible_page_ind | count(1) 
+------------------+----------
+                0 |  6293723
+                1 |  1284291
+(2 rows)
+
+ count( distinct stageid) 
+--------------------------
+                       13
+(1 row)
+
+ btob_ind | count( distinct itm) 
+----------+----------------------
+        1 |                    0
+(1 row)
+
+ btob_ind | count( distinct referrer) 
+----------+---------------------------
+        1 |                         2
+(1 row)
+
+    order_path_name     | count(1) 
+------------------------+----------
+                        |  6520909
+ C_CONSINSTANT_services |    81494
+ C_CONS_services        |   975611
+(3 rows)
+
+ op_dflt_ship_mtd | count(1) 
+------------------+----------
+                  |  7578014
+(1 row)
+
+ op_reset_ship_mtd | count(1) 
+-------------------+----------
+                   |  7578014
+(1 row)
+
+ op_ship_opthtc | count(1) 
+----------------+----------
+                |  7578014
+(1 row)
+
+ op_useraction | count(1) 
+---------------+----------
+               |  7578014
+(1 row)
+
+ op_gc_ind | count( distinct op_button_name) | count( distinct op_coupon_cd) | sum(op_cart_tot_amt) | sum(op_cart_qty) 
+-----------+---------------------------------+-------------------------------+----------------------+------------------
+         0 |                               1 |                             1 |           4824182.03 |           188161
+(1 row)
+
+ op_shipopt_bp_ind | count( distinct op_button_name) | count( distinct op_coupon_cd) | sum(op_cart_tot_amt) | sum(op_cart_qty) 
+-------------------+---------------------------------+-------------------------------+----------------------+------------------
+                 0 |                               1 |                             1 |           4824182.03 |           188161
+(1 row)
+
+ op_signin_ind | count( distinct op_button_name) | count( distinct op_coupon_cd) | sum(op_cart_tot_amt) | sum(op_cart_qty) 
+---------------+---------------------------------+-------------------------------+----------------------+------------------
+               |                               1 |                             1 |            142189.88 |             3742
+ T             |                               1 |                             1 |           4681992.15 |           184419
+(2 rows)
+
+ count( distinct cm_page) | count( distinct cm_uiaction) | count( distinct cm_pagetype) | count( distinct cm_productcode) 
+--------------------------+------------------------------+------------------------------+---------------------------------
+                        6 |                            1 |                            2 |                               2
+(1 row)
+
+     host_name      |                 cs_host                 | count(1) 
+--------------------+-----------------------------------------+----------
+ Unknown            | 208.237.178.2                           |        2
+ Unknown            | 208.237.178.3                           |        6
+ Unknown            | 65.204.48.2                             |        1
+ autocomplete       | autocomplete.barnesandnoble.co          |  1815351
+ barnesandnoble     | barneandnobel.co                        |        2
+ barnesandnoble     | barneandnoble.co                        |       79
+ barnesandnoble     | barnes-noble.co                         |        4
+ barnesandnoble     | barnesandnobel.co                       |     1593
+ barnesandnoble     | barnesandnobel.ne                       |        1
+ barnesandnoble     | barnesandnobl.co                        |       13
+ barnesandnoble     | barnesandnoble.co                       |   111038
+ barnesandnoble     | barnesandnoble.enews.co                 |        1
+ barnesandnoble     | barnesandnoble.ne                       |        2
+ barnesandnoble     | barnesandnobles.or                      |        1
+ barnesandnoble     | barnesandnobleuniversity.co             |        1
+ barnesandnoble     | barnesanoble.co                         |        8
+ barnesandnoble     | barnesndnoble.co                        |       17
+ barnesandnoble     | barnesnobel.co                          |       60
+ barnesandnoble     | barnesnoble.co                          |     1382
+ barnesandnoble     | barnsandnoble.co                        |     2496
+ barnesandnoble     | barnsnoble.co                           |       78
+ barnesandnoble     | barnsnoble.ne                           |        1
+ bn                 | bn.co                                   |       21
+ bnbn               | bnbn.co                                 |        8
+ bnbq               | bnbq.co                                 |        1
+ bnonline           | bnonline.ne                             |        1
+ bnuniversity       | bnuniversity.co                         |        4
+ bookfinder         | bookfinder.ne                           |        2
+ booksuperstore     | booksuperstore.co                       |        1
+ browse             | browse.barnesandnoble.co                |   404296
+ btob               | btob.barnesandnobel.co                  |        1
+ btob               | btob.barnesandnoble.co                  |    11241
+ btob               | btob.store-locator.barnesandnoble.co    |      174
+ btob               | btob.store-locator.barnesandnoble.com:8 |        8
+ btobbrowse         | btobbrowse.barnesandnoble.co            |     2123
+ btobmusic          | btobmusic.barnesandnoble.co             |      748
+ btobproductsearch  | btobproductsearch.barnesandnoble.co     |    19736
+ btobsearch         | btobsearch.barnesandnoble.co            |    17530
+ btobshop2          | btobshop2.barnesandnoble.co             |    27831
+ btobvideo          | btobvideo.barnesandnoble.co             |     1034
+ cart               | cart.barnesandnoble.co                  |        5
+ cart2              | cart2.barnesandnoble.co                 |  1231116
+ cart2              | cart2.barnesandnoble.com:44             |       55
+ cart2              | cart2.barnesandnoble.com:8              |       11
+ cart3              | cart3.barnesandnoble.co                 |     3081
+ cart3              | cart3.barnesandnoble.com:44             |      208
+ cart4              | cart4.barnesandnoble.co                 |  2755835
+ cart4              | cart4.barnesandnoble.com:44             |       19
+ ebooks             | ebooks.barnesandnoble.co                |       17
+ edelivery          | edelivery.barnesandnoble.co             |    45384
+ edelivery          | edelivery.barnesandnoble.com:8          |       25
+ edspage            | edspage.barnesandnoble.co               |    48081
+ educate            | educate.barnesandnoble.co               |        3
+ fantasybooks       | fantasybooks.ne                         |        1
+ gifts              | gifts.barnesandnoble.co                 |   335248
+ hp                 | hp.barnesandnoble.co                    |    71351
+ hpcart2            | hpcart2.barnesandnoble.co               |     2970
+ hpcart4            | hpcart4.barnesandnoble.co               |     5331
+ hpgifts            | hpgifts.barnesandnoble.co               |     1506
+ hpmusic            | hpmusic.barnesandnoble.co               |     1257
+ hpproductsearch    | hpproductsearch.barnesandnoble.co       |     5819
+ hpstore-locator    | hpstore-locator.barnesandnoble.co       |       32
+ hpvideo            | hpvideo.barnesandnoble.co               |      861
+ kids               | kids.barnesandnoble.co                  |    11147
+ kids               | kids.barnesandnoble.com:44              |       10
+ literature         | literature.ne                           |        4
+ locatethebook      | locatethebook.co                        |        2
+ mobile             | mobile.barnesandnoble.co                |        2
+ music              | music.barnesandnoble.co                 |   200806
+ musicaol           | musicaol.barnesandnoble.co              |        1
+ my                 | my.barnesandnoble.co                    |  1361295
+ my                 | my.barnesandnoble.com:8                 |       21
+ mybn               | mybn.co                                 |       11
+ myhp               | myhp.barnesandnoble.co                  |     5257
+ nookdeveloper      | nookdeveloper.barnesandnoble.co         |    11013
+ novels             | novels.ne                               |        7
+ orders             | orders.barnesandnoble.co                |       76
+ poetrybooks        | poetrybooks.co                          |        2
+ portal             | portal.barnesandnoble.co                |    34121
+ posters            | posters.barnesandnoble.co               |       27
+ productCollections | productcollections.barnesandnoble.co    |        4
+ productcollections | productcollections.barnesandnoble.co    |      259
+ productsearch      | productsearch.barnesandnoble.co         |  4273332
+ pubit              | pubit.barnesandnoble.co                 |   138191
+ quickpub           | quickpub.barnesandnoble.co              |       89
+ romancebooks       | romancebooks.ne                         |       18
+ scholarweb         | scholarweb.barnesandnoble.co            |      528
+ search             | search.barnesandnoble.co                |  4703009
+ search2            | search2.barnesandnoble.co               |   736681
+ secure             | secure.barnesandnoble.co                |   263064
+ sellers            | sellers.barnesandnoble.co               |     5290
+ shop               | shop.barnesandnoble.co                  |      618
+ shopaol            | shopaol.barnesandnoble.co               |        3
+ storage            | storage.barnesandnoble.co               |      261
+ store-locator      | store-locator.barnesandnoble.co         |   257478
+ store-locator      | store-locator.barnesandnoble.com:8      |    14439
+ sync               | sync.barnesandnoble.co                  |       54
+ university         | university.barnesandnoble.co            |      124
+ video              | video.barnesandnoble.co                 |   223165
+ videogames         | videogames.barnesandnoble.co            |    18608
+ wizard             | wizard.barnesandnoble.co                |      637
+ www                | www.barnesandnoble.co                   |  3902791
+ www                | www.barnesandnobleuniversity.co         |        2
+ www                | www.bn.co                               |      369
+ www                | www.bnuniv.co                           |        3
+ www                | www.bnuniversity.co                     |        3
+ www                | www.nook.co                             |        1
+ www                | www.readersadvantage.co                 |        2
+ www                | www.sciencedirect.co                    |        3
+ wwwaol             | wwwaol.barnesandnoble.co                |       21
+(110 rows)
+
+ABORT

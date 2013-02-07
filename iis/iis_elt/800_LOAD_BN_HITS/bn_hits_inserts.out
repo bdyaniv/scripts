@@ -1,0 +1,12 @@
+nohup: ignoring input
+Timing is on.
+
+           800 - LOAD_BN_HITS
+
+BEGIN
+Time: 0 hrs, 0 mins, 1 secs, 669 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 28 ms
+SET
+Time: 0 hrs, 0 mins, 0 secs, 20 ms
+./bn_hits_inserts.sh: line 2: 25249 Killed                  act -d beehive -w beehive < bn_hits_inserts.sql
