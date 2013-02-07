@@ -24,4 +24,4 @@ cp ${file} ${dest_dir}
 #rm ${file}
 cd ${pdw}
 
-echo "completed"
+echo "completed!!"
